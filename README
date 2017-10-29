@@ -2,8 +2,8 @@ Welcome to Afridokta VR repo!
 
 
 Getting Started:
-To start using git with this repo, you need to initialize your directory with the git repository. 
-In other words, you need to tell your directory of chooice who you are and what repo you want to sync with.
+    To start using git with this repo, you need to initialize your directory with the git repository. 
+    In other words, you need to tell your directory of chooice who you are and what repo you want to sync with.
 
     1. Click the "Clone or Download" button above. A URL should apear.
     2. Click the clipboard icon on the right of the url to copy the url to your clipboard.
@@ -19,8 +19,8 @@ In other words, you need to tell your directory of chooice who you are and what 
     9. Continue to "Do Every Time" section...
 
 Branches:
-    All changes should be made on a branch specified for a particular feature. This will help solve merge conflicts in the future
-    and roll back changes should major conflict arrise.
+    All changes should be made on a branch specified for a particular feature. This will help solve merge conflicts in the 
+    future and roll back changes should major conflict arrise.
     
     1. Type "git branch" to see a list of available branches.
     
@@ -37,7 +37,8 @@ Branches:
       should look like this... git checkout -b New-Branch Existing-Branch
 
 Do Every Time:
-These steps should be done every time a new change has been made and you want to sync your local directory with the online repo.
+    These steps should be done every time a new change has been made and you want to sync your local directory with the online repo.
+    
     1. Type "git status" to seee changes and differences in files (aka deltas)
     2. Type "git add ."
     3. Type "git commit -m " followed by a quick note describing the changes made.
