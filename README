@@ -5,39 +5,43 @@ Getting Started:
 To start using git with this repo, you need to initialize your directory with the git repository. 
 In other words, you need to tell your directory of chooice who you are and what repo you want to sync with.
 
-1. Click the "Clone or Download" button above. A URL should apear.
-2. Click the clipboard icon on the right of the url to copy the url to your clipboard.
-3. Open a terminal window and navigate to the directory where you would like a copy of this project to be stored.
-4. Type "git init"
-5. Type "git remote add origin " and paste the copied url to the end of the line.
-    should look like this... "git remote add origin https://github.com/justintime5046/Afridokta.git"
-6. Type "git config --global user.email " followed by the email you use for git
-    should look like this... git config --global user.email youremail@here.com
-7. Type "git config --global user.name " followed by the name you use for git
-    should look like this... git config --global user.name John Doe
-8. Type "git branch --set-upstream-to origin/master"
-9. Continue to "Do Every Time" section...
+    1. Click the "Clone or Download" button above. A URL should apear.
+    2. Click the clipboard icon on the right of the url to copy the url to your clipboard.
+    3. Open a terminal window and navigate to the directory where you would like a copy of this project to be stored.
+    4. Type "git init"
+    5. Type "git remote add origin " and paste the copied url to the end of the line.
+        should look like this... "git remote add origin https://github.com/justintime5046/Afridokta.git"
+    6. Type "git config --global user.email " followed by the email you use for git
+        should look like this... git config --global user.email youremail@here.com
+    7. Type "git config --global user.name " followed by the name you use for git
+        should look like this... git config --global user.name John Doe
+    8. Type "git branch --set-upstream-to origin/master"
+    9. Continue to "Do Every Time" section...
 
 Branches:
-All changes should be made on a branch specified for a particular feature. This will help solve merge conflicts in the future
-and roll back changes should major conflict arrise.
-1. Type "git branch" to see a list of available branches.
-SWITCH TO EXISTING BRANCH
-2. Type "git checkout " followed by the name of the branch you would like to switch to.
-  should look like this... git checkout theBranchIWant
-CREATE BRANCH
-3. Type "git checkout -b " followed by the name of the branch you want to create.
-  should look like this... git checkout -b RayCastFeature
-CREATE BRANCH BASED OFF EXISTING BRANCH
-4. Type "git checkout -b " followed by the name of the branch you want to create and existing branch
-  should look like this... git checkout -b New-Branch Existing-Branch
+    All changes should be made on a branch specified for a particular feature. This will help solve merge conflicts in the future
+    and roll back changes should major conflict arrise.
+    
+    1. Type "git branch" to see a list of available branches.
+    
+    SWITCH TO EXISTING BRANCH
+    2. Type "git checkout " followed by the name of the branch you would like to switch to.
+      should look like this... git checkout theBranchIWant
+    
+    CREATE BRANCH
+    3. Type "git checkout -b " followed by the name of the branch you want to create.
+      should look like this... git checkout -b RayCastFeature
+    
+    CREATE BRANCH BASED OFF EXISTING BRANCH
+    4. Type "git checkout -b " followed by the name of the branch you want to create and existing branch
+      should look like this... git checkout -b New-Branch Existing-Branch
 
 Do Every Time:
 These steps should be done every time a new change has been made and you want to sync your local directory with the online repo.
-1. Type "git status" to seee changes and differences in files (aka deltas)
-2. Type "git add ."
-3. Type "git commit -m " followed by a quick note describing the changes made.
-4. Type "git fetch"
-5. Type "git pull"
-6. Solve any merge conflicts localy that may arrize. Contact Scrum Master if merge respolutions are not obvious!
-7. Type "git push"
+    1. Type "git status" to seee changes and differences in files (aka deltas)
+    2. Type "git add ."
+    3. Type "git commit -m " followed by a quick note describing the changes made.
+    4. Type "git fetch"
+    5. Type "git pull"
+    6. Solve any merge conflicts localy that may arrize. Contact Scrum Master if merge respolutions are not obvious!
+    7. Type "git push"
