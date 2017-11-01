@@ -46,3 +46,9 @@ Do Every Time:
     5. Type "git pull"
     6. Solve any merge conflicts localy that may arrize. Contact Scrum Master if merge respolutions are not obvious!
     7. Type "git push"
+
+Merge:
+    1. (on branch development)$ git merge master
+    2. (resolve any merge conflicts if there are any)
+    3. git checkout master
+    4. git merge development (there won't be any conflicts now)
