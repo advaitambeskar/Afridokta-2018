@@ -473,7 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 800526962}
   m_Layer: 0
-  m_Name: RightHand
+  m_Name: RightHandMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,7 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897353478}
   m_Layer: 0
-  m_Name: LeftHand
+  m_Name: LeftHandMale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
