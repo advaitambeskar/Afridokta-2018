@@ -17,5 +17,7 @@ public class Part : MonoBehaviour {
     public void onClick()
     {
         mytext.text = this.ToString();
+        mytext.text = mytext.text.Substring(0, mytext.text.Length - 6);
+
     }
 }
