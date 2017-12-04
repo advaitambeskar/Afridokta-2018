@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afridokta", "Afridokta.csproj", "{96F7626B-2F2D-0883-B895-76AF74343002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afridokta.Plugins", "Afridokta.Plugins.csproj", "{35AB0D1C-99F8-4DD4-F010-2091BAFE5971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afridokta.Editor.Plugins", "Afridokta.Editor.Plugins.csproj", "{EFDC1566-A890-37DD-22B8-6FF5F7F64C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afridokta.Editor", "Afridokta.Editor.csproj", "{E6341AC4-DCC4-967D-FD87-4A1802BBEC72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96F7626B-2F2D-0883-B895-76AF74343002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F7626B-2F2D-0883-B895-76AF74343002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F7626B-2F2D-0883-B895-76AF74343002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F7626B-2F2D-0883-B895-76AF74343002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35AB0D1C-99F8-4DD4-F010-2091BAFE5971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35AB0D1C-99F8-4DD4-F010-2091BAFE5971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35AB0D1C-99F8-4DD4-F010-2091BAFE5971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35AB0D1C-99F8-4DD4-F010-2091BAFE5971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDC1566-A890-37DD-22B8-6FF5F7F64C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDC1566-A890-37DD-22B8-6FF5F7F64C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDC1566-A890-37DD-22B8-6FF5F7F64C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDC1566-A890-37DD-22B8-6FF5F7F64C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6341AC4-DCC4-967D-FD87-4A1802BBEC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6341AC4-DCC4-967D-FD87-4A1802BBEC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6341AC4-DCC4-967D-FD87-4A1802BBEC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6341AC4-DCC4-967D-FD87-4A1802BBEC72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
