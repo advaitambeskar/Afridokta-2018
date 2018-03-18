@@ -15,5 +15,5 @@ EditorBuildSettings:
     path: Assets/MaleSelect.unity
     guid: d18d106a6aa10e74fa8aa7037a5f34b1
   - enabled: 1
-    path: Assets/femaleselect.unity
+    path: Assets/Standard Assets/femaleselect.unity
     guid: 826f92b89209acd49958b3402a8a102e
