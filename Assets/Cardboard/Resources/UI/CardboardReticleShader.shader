@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-// Copyright 2015 Google Inc. All rights reserved.
+﻿// Copyright 2015 Google Inc. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-Shader "Cardboard/CardboardReticle" {
+Shader "GoogleVR/Reticle" {
   Properties {
     _Color  ("Color", Color) = ( 1, 1, 1, 1 )
     _InnerDiameter ("InnerDiameter", Range(0, 10.0)) = 1.5
@@ -56,7 +54,7 @@ Shader "Cardboard/CardboardReticle" {
       fragmentInput vert(vertexInput i) {
         float scale = lerp(_OuterDiameter, _InnerDiameter, i.vertex.z);
 
-        float4 vert_out = float4(i.vertex.x * scale, i.vertex.y * scale, _DistanceInMeters, 1.0);
+        float3 vert_out = float3(i.vertex.x * scale, i.vertex.y * scale, _DistanceInMeters);
 
         fragmentInput o;
         o.position = UnityObjectToClipPos (vert_out);
@@ -64,7 +62,7 @@ Shader "Cardboard/CardboardReticle" {
       }
 
       fixed4 frag(fragmentInput i) : SV_Target {
-        fixed4 ret = fixed4(_Color.x, _Color.y, _Color.z, 1.0);
+        fixed4 ret = _Color;
         return ret;
       }
 

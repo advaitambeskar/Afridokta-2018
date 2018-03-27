@@ -1,4 +1,4 @@
-// Copyright 2015 Google Inc. All rights reserved.
+// Copyright 2016 Google Inc. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,40 +15,47 @@
 using UnityEngine;
 using System.Collections;
 
-/// Cardboard audio listener component that enhances AudioListener to provide advanced spatial audio
+#pragma warning disable 0618 // Ignore GvrAudio* deprecation
+
+/// GVR audio listener component that enhances AudioListener to provide advanced spatial audio
 /// features.
 ///
 /// There should be only one instance of this which is attached to the AudioListener's game object.
-[RequireComponent(typeof(AudioListener))]
-[AddComponentMenu("Cardboard/Audio/CardboardAudioListener")]
-public class CardboardAudioListener : MonoBehaviour {
+#if UNITY_2017_1_OR_NEWER
+[System.Obsolete("Please upgrade to Resonance Audio (https://developers.google.com/resonance-audio/migrate).")]
+#endif  // UNITY_2017_1_OR_NEWER
+[AddComponentMenu("GoogleVR/Audio/GvrAudioListener")]
+public class GvrAudioListener : MonoBehaviour {
   /// Global gain in decibels to be applied to the processed output.
   public float globalGainDb = 0.0f;
 
-  /// Global scale of the real world with respect to the Unity environment.
-  public float worldScale = 1.0f;
+  /// Global layer mask to be used in occlusion detection.
+  public LayerMask occlusionMask = -1;
 
   /// Audio rendering quality of the system.
   [SerializeField]
-  private CardboardAudio.Quality quality = CardboardAudio.Quality.Medium;
+  private GvrAudio.Quality quality = GvrAudio.Quality.High;
 
   void Awake () {
-    CardboardAudio.Initialize(this, quality);
+#if UNITY_EDITOR && UNITY_2017_1_OR_NEWER
+    Debug.LogWarningFormat(gameObject,
+        "Game object '{0}' uses deprecated {1} component.\nPlease upgrade to Resonance Audio ({2}).",
+        name, GetType().Name, "https://developers.google.com/resonance-audio/migrate");
+#endif  // UNITY_EDITOR && UNITY_2017_1_OR_NEWER
+    GvrAudio.Initialize(this, quality);
   }
 
   void OnEnable () {
-    CardboardAudio.UpdateAudioListener(globalGainDb, worldScale);
+    GvrAudio.UpdateAudioListener(globalGainDb, occlusionMask);
   }
 
   void OnDestroy () {
-    CardboardAudio.Shutdown(this);
+    GvrAudio.Shutdown(this);
   }
 
   void Update () {
-    CardboardAudio.UpdateAudioListener(globalGainDb, worldScale);
-  }
-
-  void OnAudioFilterRead (float[] data, int channels) {
-    CardboardAudio.ProcessAudioListener(data, data.Length);
+    GvrAudio.UpdateAudioListener(globalGainDb, occlusionMask);
   }
 }
+
+#pragma warning restore 0618 // Restore warnings

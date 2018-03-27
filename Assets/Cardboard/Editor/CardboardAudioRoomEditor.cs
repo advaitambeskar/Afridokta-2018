@@ -1,4 +1,4 @@
-// Copyright 2015 Google Inc. All rights reserved.
+// Copyright 2016 Google Inc. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,11 +16,13 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
-/// A custom editor for properties on the CardboardAudioRoom script. This appears in the Inspector
-/// window of a CardboardAudioRoom object.
-[CustomEditor(typeof(CardboardAudioRoom))]
+#pragma warning disable 0618 // Ignore GvrAudio* deprecation
+
+/// A custom editor for properties on the GvrAudioRoom script. This appears in the Inspector window
+/// of a GvrAudioRoom object.
+[CustomEditor(typeof(GvrAudioRoom))]
 [CanEditMultipleObjects]
-public class CardboardAudioRoomEditor : Editor {
+public class GvrAudioRoomEditor : Editor {
   private SerializedProperty leftWall = null;
   private SerializedProperty rightWall = null;
   private SerializedProperty floor = null;
@@ -69,6 +71,12 @@ public class CardboardAudioRoomEditor : Editor {
   public override void OnInspectorGUI () {
     serializedObject.Update();
 
+    // Add clickable script field, as would have been provided by DrawDefaultInspector()
+    MonoScript script = MonoScript.FromMonoBehaviour (target as MonoBehaviour);
+    EditorGUI.BeginDisabledGroup (true);
+    EditorGUILayout.ObjectField ("Script", script, typeof(MonoScript), false);
+    EditorGUI.EndDisabledGroup ();
+
     EditorGUILayout.LabelField(surfaceMaterialsLabel);
     ++EditorGUI.indentLevel;
     DrawSurfaceMaterial(leftWall);
@@ -81,17 +89,16 @@ public class CardboardAudioRoomEditor : Editor {
 
     EditorGUILayout.Separator();
 
-    EditorGUILayout.Slider(reflectivity, 0.0f, CardboardAudio.maxReflectivity, reflectivityLabel);
+    EditorGUILayout.Slider(reflectivity, 0.0f, GvrAudio.maxReflectivity, reflectivityLabel);
 
     EditorGUILayout.Separator();
 
     EditorGUILayout.LabelField(reverbPropertiesLabel);
     ++EditorGUI.indentLevel;
-    EditorGUILayout.Slider(reverbGainDb, CardboardAudio.minGainDb, CardboardAudio.maxGainDb,
-                           reverbGainLabel);
-    EditorGUILayout.Slider(reverbBrightness, CardboardAudio.minReverbBrightness,
-                           CardboardAudio.maxReverbBrightness, reverbBrightnessLabel);
-    EditorGUILayout.Slider(reverbTime, 0.0f, CardboardAudio.maxReverbTime, reverbTimeLabel);
+    EditorGUILayout.Slider(reverbGainDb, GvrAudio.minGainDb, GvrAudio.maxGainDb, reverbGainLabel);
+    EditorGUILayout.Slider(reverbBrightness, GvrAudio.minReverbBrightness,
+                           GvrAudio.maxReverbBrightness, reverbBrightnessLabel);
+    EditorGUILayout.Slider(reverbTime, 0.0f, GvrAudio.maxReverbTime, reverbTimeLabel);
     --EditorGUI.indentLevel;
 
     EditorGUILayout.Separator();
@@ -103,11 +110,9 @@ public class CardboardAudioRoomEditor : Editor {
   /// @endcond
 
   private void DrawSurfaceMaterial (SerializedProperty surfaceMaterial) {
-#if UNITY_4_5
-    surfaceMaterialLabel.text = ObjectNames.NicifyVariableName(surfaceMaterial.name);
-#else
     surfaceMaterialLabel.text = surfaceMaterial.displayName;
-#endif
     EditorGUILayout.PropertyField(surfaceMaterial, surfaceMaterialLabel);
   }
 }
+
+#pragma warning restore 0618 // Restore warnings
