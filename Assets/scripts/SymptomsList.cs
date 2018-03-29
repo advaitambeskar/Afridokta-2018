@@ -28,4 +28,4 @@ public class SymptomsList : MonoBehaviour {
 		writer.Close ();
 	}
 }
-somegameobject.GetComponentInChildren<Text>().text;
+
