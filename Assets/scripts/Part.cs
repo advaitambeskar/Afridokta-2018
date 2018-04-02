@@ -12,6 +12,8 @@ public class Part : MonoBehaviour
     public Text mytext, mytext1;
     public Light lightUpperHead1, lightUpperHead2, lightUpperHead3, lightUpperHead4;
     public Light lightChest, lightBelly;
+    public Light lightKnee1, lightKnee2;
+    public Light lightFoot1, lightFoot2;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +24,13 @@ public class Part : MonoBehaviour
 
         lightChest = GameObject.Find("Point Light Chest").GetComponent<Light>();
         lightBelly = GameObject.Find("Point Light Belly").GetComponent<Light>();
+
+        lightKnee1 = GameObject.Find("Point Light Knee (1)").GetComponent<Light>();
+        lightKnee2 = GameObject.Find("Point Light Knee (2)").GetComponent<Light>();
+
+        lightFoot1 = GameObject.Find("Point Light Foot (1)").GetComponent<Light>();
+        lightFoot2 = GameObject.Find("Point Light Foot (2)").GetComponent<Light>();
+
         selectedPart = "";
         text1 = "";
         text = "";
@@ -48,8 +57,12 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Knees"))
         {
+            lightKnee1.enabled = true;
+            lightKnee2.enabled = true;
             mytext.text = mytext.text + " / Magoti";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
+            GameObject.Find("Male").GetComponent<Public>().text = mytext.text;
+            GameObject.Find("Male").GetComponent<Public>().text1 = mytext1.text;
         }
         else if(mytext.text.Equals("UpperLeftLeg"))
         {
@@ -61,10 +74,8 @@ public class Part : MonoBehaviour
             lightBelly.enabled = true;
             mytext.text = mytext.text + " / Tumbo";
             mytext1.text = "Stomach ache\nVomiting";
-            string temp1 = mytext.text;
-            string temp2 = mytext1.text;
-            GameObject.Find("Male").GetComponent<Public>().text = temp1;
-            GameObject.Find("Male").GetComponent<Public>().text1 = temp2;
+            GameObject.Find("Male").GetComponent<Public>().text = mytext.text;
+            GameObject.Find("Male").GetComponent<Public>().text1 = mytext1.text;
         }
         else if(mytext.text.Equals("LowerRightLeg"))
         {
@@ -88,8 +99,12 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Feet"))
         {
+            lightFoot1.enabled = true;
+            lightFoot2.enabled = true;
             mytext.text = mytext.text + " / Viganja";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
+            GameObject.Find("Male").GetComponent<Public>().text = mytext.text;
+            GameObject.Find("Male").GetComponent<Public>().text1 = mytext1.text;
         }
         else if (mytext.text.Equals("UpperHead"))
         {
@@ -233,8 +248,18 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Knees"))
         {
+            lightKnee1.enabled = true;
+            lightKnee2.enabled = true;
             mytext.text = mytext.text + " / Magoti";
             mytext1.text = "";
+            if (selectedPart.Equals("Knees"))
+            {
+                mytext1.text = text1;
+            }
+            else
+            {
+                mytext1.text = "";
+            }
         }
         else if (mytext.text.Equals("UpperLeftLeg"))
         {
@@ -277,8 +302,18 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Feet"))
         {
+            lightFoot1.enabled = true;
+            lightFoot2.enabled = true;
             mytext.text = mytext.text + " / Viganja";
             mytext1.text = "";
+            if (selectedPart.Equals("Feet"))
+            {
+                mytext1.text = text1;
+            }
+            else
+            {
+                mytext1.text = "";
+            }
         }
         else if (mytext.text.Equals("UpperHead"))
         {
@@ -443,6 +478,19 @@ public class Part : MonoBehaviour
                 mytext1.text = text1;
                 lightBelly.enabled = true;
                 break;
+            case "Knees":
+                mytext.text = text;
+                mytext1.text = text1;
+                lightKnee1.enabled = true;
+                lightKnee2.enabled = true;
+                break;
+            case "Feet":
+                mytext.text = text;
+                mytext1.text = text1;
+                lightFoot1.enabled = true;
+                lightFoot2.enabled = true;
+                break;
+
 
         }
         
@@ -456,5 +504,9 @@ public class Part : MonoBehaviour
         lightUpperHead4.enabled = false;
         lightChest.enabled = false;
         lightBelly.enabled = false;
+        lightKnee1.enabled = false;
+        lightKnee2.enabled = false;
+        lightFoot1.enabled = false;
+        lightFoot2.enabled = false;
     }
 }
