@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44700086, g: 0.49689108, b: 0.5750596, a: 1}
+  m_IndirectSpecularColor: {r: 0.44700062, g: 0.49689037, b: 0.5750585, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -178,6 +178,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1539336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +544,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &138165517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,6 +1011,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &210610268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,6 +1201,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &220862684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1327,8 +1343,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 308778041}
-          m_MethodName: onClick
+        - m_Target: {fileID: 1985568106}
+          m_MethodName: zoominview
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1338,30 +1354,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 308778041}
-          m_MethodName: onHover
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 308778041}
+        - m_Target: {fileID: 1985568105}
           m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
@@ -1409,6 +1402,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &308778042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1662,6 +1659,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!136 &384837360
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2270,6 +2271,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &538493962
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2338,7 +2343,7 @@ GameObject:
   - component: {fileID: 544470764}
   - component: {fileID: 544470763}
   m_Layer: 0
-  m_Name: New Sprite1
+  m_Name: RotateClock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2351,7 +2356,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 544470761}
   m_LocalRotation: {x: -0.6532815, y: -0.27059805, z: -0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: 1.05, y: -0.62, z: 0}
+  m_LocalPosition: {x: 0.33, y: -0.62, z: 1.47}
   m_LocalScale: {x: 1.6098777, y: 2.130628, z: 1}
   m_Children: []
   m_Father: {fileID: 1535760531}
@@ -2649,6 +2654,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &605671800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2827,7 +2836,7 @@ GameObject:
   - component: {fileID: 608012712}
   - component: {fileID: 608012711}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: RotateAntiClock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2840,7 +2849,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 608012707}
   m_LocalRotation: {x: -0.6532815, y: 0.27059805, z: 0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: 1.05, y: -0.62, z: 0}
+  m_LocalPosition: {x: 1.7, y: -0.62, z: 1.47}
   m_LocalScale: {x: 1.6098777, y: 2.130628, z: 1}
   m_Children: []
   m_Father: {fileID: 428303602}
@@ -3267,6 +3276,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &673242411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3502,6 +3515,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &687593595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,7 +3693,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.571
+      value: -0.585
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3684,7 +3701,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.73
+      value: 1.511
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3769,8 +3786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01999998, y: 0.07999992}
-  m_SizeDelta: {x: 279.1, y: 179.55}
+  m_AnchoredPosition: {x: 0.01, y: 0.01}
+  m_SizeDelta: {x: 243.79, y: 225.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704745051
 MonoBehaviour:
@@ -3793,18 +3810,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_Font: {fileID: 12800000, guid: b916f24c65d0f7f4c90ae2aa3a895e5e, type: 3}
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 58
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 1
+    m_LineSpacing: 2
   m_Text: 
 --- !u!222 &704745052
 CanvasRenderer:
@@ -3883,6 +3900,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &723008037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4179,6 +4200,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &779271648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4494,6 +4519,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &860402835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5031,6 +5060,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &917335878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5432,7 +5465,7 @@ GameObject:
   - component: {fileID: 1015597483}
   - component: {fileID: 1015597482}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LeftBodyPart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5506,7 +5539,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015597481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.04}
+  m_LocalPosition: {x: 0, y: 0, z: -1.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2086138847}
@@ -5515,7 +5548,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.22, y: 1.24}
+  m_AnchoredPosition: {x: 1.22, y: 0.52}
   m_SizeDelta: {x: 1.71, y: 1.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1039862029
@@ -5618,6 +5651,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1039862033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5990,7 +6027,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1089647924}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.04}
+  m_LocalPosition: {x: 0, y: 0, z: -1.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2058500184}
@@ -5999,7 +6036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.24, y: 1.24}
+  m_AnchoredPosition: {x: -2.52, y: 0.52}
   m_SizeDelta: {x: 1.71, y: 1.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1091731249
@@ -6106,6 +6143,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1105985292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6331,6 +6372,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1115896615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6847,6 +6892,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1241160634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7085,7 +7134,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1326944251}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.001}
   m_LocalScale: {x: 0.0062078796, y: 0.0054, z: 1.08}
   m_Children: []
   m_Father: {fileID: 2086138847}
@@ -7093,8 +7142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.08}
-  m_SizeDelta: {x: 279.1, y: 179.55}
+  m_AnchoredPosition: {x: -0.003, y: 0.502}
+  m_SizeDelta: {x: 248.142, y: 60.691}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326944253
 MonoBehaviour:
@@ -7117,13 +7166,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_Font: {fileID: 12800000, guid: f521569c33e302948bf34460f1847383, type: 3}
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 58
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7756,6 +7805,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1497289152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7943,6 +7996,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1528182619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8384,7 +8441,6 @@ MonoBehaviour:
   lightUpperHead3: {fileID: 0}
   lightUpperHead4: {fileID: 0}
   lightLowerHead1: {fileID: 0}
-  
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
@@ -8400,6 +8456,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1565399597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8586,6 +8646,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1588206020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8734,6 +8798,84 @@ Transform:
   m_Father: {fileID: 2033198461}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1606303711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1795762721710446, guid: 29158b0bb74a3ea43a13f3313921dda8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1606303712}
+  - component: {fileID: 1606303714}
+  - component: {fileID: 1606303713}
+  m_Layer: 5
+  m_Name: SymptomsAccumalator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1606303712
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224657990509612346, guid: 29158b0bb74a3ea43a13f3313921dda8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606303711}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.001}
+  m_LocalScale: {x: 0.006210001, y: 0.0053999997, z: 1.0800004}
+  m_Children: []
+  m_Father: {fileID: 2086138847}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.007, y: -0.144}
+  m_SizeDelta: {x: 246.975, y: 181.57}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1606303713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114122459519081538, guid: 29158b0bb74a3ea43a13f3313921dda8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606303711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b916f24c65d0f7f4c90ae2aa3a895e5e, type: 3}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 58
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1606303714
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222672185046471504, guid: 29158b0bb74a3ea43a13f3313921dda8,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606303711}
 --- !u!1 &1633497988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8898,6 +9040,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1652193189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9115,6 +9261,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1697652123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9332,6 +9482,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1853458153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10046,6 +10200,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1978756438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10215,7 +10373,6 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1962317781004238, guid: aa5bf19a5e595414a892e3f466d49778,
-
     type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
@@ -10313,6 +10470,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1985568106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10383,183 +10544,6 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1985568105}
           m_MethodName: onHover
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
---- !u!114 &220862683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114490226288075594, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 220862680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb175417fc133c34a89e60f15df98209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mytext: {fileID: 1326944253}
-  mytext1: {fileID: 704745051}
---- !u!23 &220862684
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23136030103085006, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 220862680}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!136 &220862685
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 136558946177020582, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 220862680}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &220862686
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33567124209214440, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 220862680}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &250618346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1058318222654006, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 250618347}
-  m_Layer: 0
-  m_Name: thumb_03_l
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &250618347
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4131217439529562, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 250618346}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03404155, y: 1.0505485e-16, z: -1.079258e-18}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1904273550}
-  m_Father: {fileID: 1488751682}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &308778038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1391843936082852, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 308778039}
-  - component: {fileID: 308778044}
-  - component: {fileID: 308778043}
-  - component: {fileID: 308778042}
-  - component: {fileID: 308778041}
-  - component: {fileID: 308778040}
-  m_Layer: 0
-  m_Name: Left Forearms
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &308778039
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4466875803790492, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 308778038}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.288, y: -0.008999586, z: 0.045}
-  m_LocalScale: {x: 0.19355914, y: 0.13849123, z: 0.19355914}
-  m_Children: []
-  m_Father: {fileID: 1931933280}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
---- !u!114 &308778040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114581232976599784, guid: aa5bf19a5e595414a892e3f466d49778,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 308778038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1985568106}
-          m_MethodName: zoominview
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1985568105}
-          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10761,6 +10745,10 @@ MonoBehaviour:
   lightUpperRightLeg: {fileID: 0}
   lightLowerLeftLeg: {fileID: 0}
   lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &2002683715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11148,14 +11136,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9191176, b: 0.9191176, a: 0.559}
+  m_Color: {r: 1, g: 0.9191176, b: 0.9191176, a: 0.56078434}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 632341d613cd9034296b9ffcfa7319d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca7de18139a94924ba3e653f5d176c8b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11342,14 +11330,15 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2086138846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.10331813, z: -0, w: 0.9946484}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1326944252}
+  - {fileID: 1606303712}
   m_Father: {fileID: 1015597485}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -11.861001, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.63, y: 0.95}
@@ -11393,7 +11382,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 632341d613cd9034296b9ffcfa7319d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca7de18139a94924ba3e653f5d176c8b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
