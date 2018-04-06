@@ -140,7 +140,7 @@ PlayerSettings:
     Android: com.Afridokta.Afridokta_VR
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 22
+  AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -255,7 +255,7 @@ PlayerSettings:
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings:
   - m_BuildTarget: Android
-    m_Enabled: 1
+    m_Enabled: 0
     m_Devices: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -621,8 +621,8 @@ PlayerSettings:
   cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: e855deba-2fd1-4034-b882-702f975322b8
-  projectName: VR_Afridokta
-  organizationId: parthsethi16-ps-gmail-com
+  cloudProjectId: e76ac80e-649c-462b-ad1a-3d9d36763c79
+  projectName: Afridokta VR (2)
+  organizationId: kit_173
   cloudEnabled: 0
   enableNewInputSystem: 0

@@ -158,6 +158,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1539336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +224,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1539335}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539336}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1539335}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539336}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1539335}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -267,6 +347,115 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539333}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &55868045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1951323735491180, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 55868046}
+  - component: {fileID: 55868047}
+  m_Layer: 0
+  m_Name: PrimarySelection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &55868046
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4058154108897374, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55868045}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -114, y: -17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 654665390}
+  m_Father: {fileID: 795698347}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &55868047
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 225403446190151142, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55868045}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!1 &57378171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 57378172}
+  - component: {fileID: 57378173}
+  m_Layer: 0
+  m_Name: Point Light head (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &57378172
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57378171}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.497, y: 1.8447243, z: -0.073}
+  m_LocalScale: {x: 1.0141426, y: 1.0141422, z: 1.0141425}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!108 &57378173
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57378171}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 44.779842
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967241
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &62974135
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +567,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &138165517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +633,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 138165516}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 138165517}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 138165516}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 138165517}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 138165516}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -556,6 +825,136 @@ Transform:
   m_Father: {fileID: 1597170695}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &166970720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 166970721}
+  - component: {fileID: 166970722}
+  m_Layer: 0
+  m_Name: Point Light Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166970721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166970720}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.045, y: 1.382, z: 0.456}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &166970722
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166970720}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 55.14625
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &177063185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 177063186}
+  - component: {fileID: 177063187}
+  m_Layer: 0
+  m_Name: Point Light RightForearms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177063186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177063185}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: 0.528, y: 1.501, z: 0.473}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &177063187
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177063185}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 31.142292
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &184911577
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +1034,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &210610268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,6 +1224,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &220862684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -952,6 +1399,40 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 308778041}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 308778041}
+          m_MethodName: leaveHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &308778041
 MonoBehaviour:
@@ -967,6 +1448,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &308778042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1022,6 +1527,136 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 308778038}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &340692402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 340692403}
+  - component: {fileID: 340692404}
+  m_Layer: 0
+  m_Name: Point Light head (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340692403
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340692402}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.418, y: 1.8447244, z: -0.073}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!108 &340692404
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340692402}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 44.779842
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967245
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &341045535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 341045536}
+  - component: {fileID: 341045537}
+  m_Layer: 0
+  m_Name: Point Light head (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &341045536
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 341045535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.054, y: 1.8447244, z: -0.459}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &341045537
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 341045535}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 44.779842
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967241
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &384837357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,6 +1705,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!136 &384837360
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1513,6 +2172,71 @@ Transform:
   m_Father: {fileID: 867046405}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &520601709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 520601710}
+  - component: {fileID: 520601711}
+  m_Layer: 0
+  m_Name: Point Light LeftBiceps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520601710
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 520601709}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.349, y: 1.492, z: 0.404}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &520601711
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 520601709}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 23.74413
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &538493958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +2317,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &538493962
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1952,6 +2700,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &605671800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,6 +2766,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 605671799}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 605671800}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 605671799}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 605671800}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 605671799}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2282,6 +3110,275 @@ Transform:
   m_Father: {fileID: 154527446}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &640919521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 640919522}
+  - component: {fileID: 640919523}
+  m_Layer: 0
+  m_Name: Point Light LeftForearms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640919522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640919521}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.585, y: 1.522, z: 0.385}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &640919523
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640919521}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 33.70713
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 2
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &654665389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1970458212567264, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 654665390}
+  - component: {fileID: 654665394}
+  - component: {fileID: 654665393}
+  - component: {fileID: 654665392}
+  - component: {fileID: 654665391}
+  m_Layer: 0
+  m_Name: Button-BS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &654665390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224802455870000298, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654665389}
+  m_LocalRotation: {x: 0, y: 0.9961947, z: 0, w: 0.08715588}
+  m_LocalPosition: {x: 0, y: 0, z: 877.076}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_Children:
+  - {fileID: 2036786477}
+  m_Father: {fileID: 55868046}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 170, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 238.072, y: 1.616}
+  m_SizeDelta: {x: 40, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &654665391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654665389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4161df47fbc64944a6c64ad56999b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &654665392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114909291917686466, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654665389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &654665393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114053426642256688, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654665389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 654665392}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 654665391}
+        m_MethodName: gotomale
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '"AfridoktaBodyShowcase"'
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!222 &654665394
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222168826563652914, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654665389}
+--- !u!1 &661545866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 661545867}
+  - component: {fileID: 661545868}
+  m_Layer: 0
+  m_Name: Point Light Knee (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &661545867
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 661545866}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: 0.054, y: 0.47899997, z: 0.569}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &661545868
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 661545866}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 18.58379
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &670965181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,6 +3461,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &673242411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2406,6 +3527,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 673242410}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 673242411}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 673242410}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 673242411}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 673242410}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2523,6 +3700,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &687593595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2565,6 +3766,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 687593594}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 687593595}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 687593594}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 687593595}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 687593594}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2828,6 +4085,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &723008037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,6 +4151,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 723008036}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 723008037}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 723008036}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 723008037}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 723008036}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3048,6 +4385,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &779271648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3103,6 +4464,105 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 779271644}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &795698343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1531719129717430, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 795698347}
+  - component: {fileID: 795698346}
+  - component: {fileID: 795698345}
+  - component: {fileID: 795698344}
+  m_Layer: 5
+  m_Name: ButtonCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &795698344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114171770679876832, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795698343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &795698345
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223296950151159190, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795698343}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &795698346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114310622423520602, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795698343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!224 &795698347
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224124888735229446, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795698343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -880}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 55868046}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -121.5, y: 16}
+  m_SizeDelta: {x: 100, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &815750750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +4624,71 @@ Transform:
   m_Father: {fileID: 896220995}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &844816750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 844816751}
+  - component: {fileID: 844816752}
+  m_Layer: 0
+  m_Name: Point Light LowerLeftLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844816751
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844816750}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.207, y: 0.214, z: 0.549}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &844816752
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844816750}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 35.51166
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &860402831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +4754,40 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 860402834}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 860402834}
+          m_MethodName: leaveHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &860402834
 MonoBehaviour:
@@ -3244,6 +4803,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &860402835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3519,6 +5102,71 @@ Transform:
   m_Father: {fileID: 867046405}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &876376906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 876376907}
+  - component: {fileID: 876376908}
+  m_Layer: 0
+  m_Name: Point Light UpperLeftLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &876376907
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 876376906}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.306, y: 0.793, z: 0.593}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &876376908
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 876376906}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 55.21641
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &896220994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,6 +5198,71 @@ Transform:
   m_Father: {fileID: 1091731250}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &906464919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 906464920}
+  - component: {fileID: 906464921}
+  m_Layer: 0
+  m_Name: Point Light Foot (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &906464920
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906464919}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: 0.057, y: 0.062, z: 0.442}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &906464921
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906464919}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 18.58379
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &910511777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,6 +5344,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &917335878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3673,6 +5410,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 917335877}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 917335878}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 917335877}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 917335878}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 917335877}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3803,6 +5596,71 @@ Transform:
   m_Father: {fileID: 1595514033}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &968053637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 968053638}
+  - component: {fileID: 968053639}
+  m_Layer: 0
+  m_Name: Point Light head (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &968053638
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 968053637}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.014, y: 1.69, z: -0.459}
+  m_LocalScale: {x: 1.014142, y: 1.0141422, z: 1.0141422}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &968053639
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 968053637}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 15.800521
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &972065348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,6 +5691,71 @@ Transform:
   m_Father: {fileID: 454100989}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &972875266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 972875267}
+  - component: {fileID: 972875268}
+  m_Layer: 0
+  m_Name: Point Light LowerRightLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972875267
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972875266}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: 0.113, y: 0.21399999, z: 0.574}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &972875268
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972875266}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 35.51166
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1015597481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,6 +5935,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1039862033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4067,6 +6014,201 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1039862029}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1049868184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1049868185}
+  - component: {fileID: 1049868186}
+  m_Layer: 0
+  m_Name: Point Light Foot (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1049868185
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049868184}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.136, y: 0.055, z: 0.518}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &1049868186
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049868184}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 18.58379
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &1057174007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1057174008}
+  - component: {fileID: 1057174009}
+  m_Layer: 0
+  m_Name: Point Light head (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1057174008
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1057174007}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.497, y: 1.6859, z: -0.0115}
+  m_LocalScale: {x: 1.0141426, y: 1.0141422, z: 1.0141425}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!108 &1057174009
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1057174007}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 17.495905
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &1071624692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1071624693}
+  - component: {fileID: 1071624694}
+  m_Layer: 0
+  m_Name: Point Light LowerBack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1071624693
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071624692}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.014000021, y: 1.217, z: -0.459}
+  m_LocalScale: {x: 1.014142, y: 1.0141422, z: 1.0141422}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1071624694
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071624692}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 48.89695
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1081547876
 GameObject:
   m_ObjectHideFlags: 0
@@ -4285,6 +6427,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1105985292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4327,6 +6493,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1105985291}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1105985292}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1105985291}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1105985292}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1105985291}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4434,6 +6656,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1115896615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4476,6 +6722,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1115896614}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1115896615}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1115896614}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1115896615}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1115896614}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4573,6 +6875,170 @@ Transform:
   m_Father: {fileID: 1595514033}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1129504084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1531719129717430, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1129504088}
+  - component: {fileID: 1129504087}
+  - component: {fileID: 1129504086}
+  - component: {fileID: 1129504085}
+  m_Layer: 5
+  m_Name: ButtonCanvas1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1129504085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114171770679876832, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129504084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1129504086
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223296950151159190, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129504084}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1129504087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114310622423520602, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129504084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!224 &1129504088
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224124888735229446, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129504084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -880}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1445456684}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -128, y: 16}
+  m_SizeDelta: {x: 100, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1156300777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1156300778}
+  - component: {fileID: 1156300779}
+  m_Layer: 0
+  m_Name: Point Light RightBiceps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1156300778
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156300777}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: 0.253, y: 1.495, z: 0.452}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &1156300779
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156300777}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 23.74413
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1159373181
 GameObject:
   m_ObjectHideFlags: 0
@@ -4664,6 +7130,71 @@ Transform:
   m_Father: {fileID: 736409083}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1216519084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1216519085}
+  - component: {fileID: 1216519086}
+  m_Layer: 0
+  m_Name: Point Light Knee (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216519085
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216519084}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.139, y: 0.479, z: 0.554}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &1216519086
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216519084}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 18.58379
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1241160630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,6 +7275,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1241160634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4799,6 +7354,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1241160630}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1246298680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1246298681}
+  - component: {fileID: 1246298682}
+  m_Layer: 0
+  m_Name: Point Light head (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246298681
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246298680}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.01599999, y: 1.675, z: 0.42999998}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &1246298682
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246298680}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 23.74413
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1258788667
 GameObject:
   m_ObjectHideFlags: 0
@@ -5415,6 +8035,50 @@ Transform:
   m_Father: {fileID: 1334287090}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1445456683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1951323735491180, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1445456684}
+  - component: {fileID: 1445456685}
+  m_Layer: 0
+  m_Name: PrimarySelection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445456684
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4058154108897374, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445456683}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -114, y: -17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1761344604}
+  m_Father: {fileID: 1129504088}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!225 &1445456685
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 225403446190151142, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445456683}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1458141453
 Prefab:
   m_ObjectHideFlags: 0
@@ -5568,6 +8232,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1497289152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5735,6 +8423,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1528182619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5777,6 +8489,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1528182618}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1528182619}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1528182618}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1528182619}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1528182618}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6115,6 +8883,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1565399597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6281,6 +9073,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &1588206020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6573,6 +9389,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1652193189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6770,6 +9610,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1697652123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6886,6 +9750,223 @@ Transform:
   m_Father: {fileID: 670965182}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1755427870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1398547886888528, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1755427871}
+  - component: {fileID: 1755427873}
+  - component: {fileID: 1755427872}
+  m_Layer: 0
+  m_Name: Return
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1755427871
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224743940603216668, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755427870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1761344604}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1755427872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114327762786022476, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755427870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Send
+--- !u!222 &1755427873
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222285397947070362, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755427870}
+--- !u!1 &1761344603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1970458212567264, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1761344604}
+  - component: {fileID: 1761344608}
+  - component: {fileID: 1761344607}
+  - component: {fileID: 1761344606}
+  - component: {fileID: 1761344605}
+  m_Layer: 0
+  m_Name: Button-BS1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1761344604
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224802455870000298, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761344603}
+  m_LocalRotation: {x: 0, y: 0.9961947, z: 0, w: 0.08715588}
+  m_LocalPosition: {x: 0, y: 0, z: 877.076}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_Children:
+  - {fileID: 1755427871}
+  m_Father: {fileID: 1445456684}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 170, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 238.072, y: 1.616}
+  m_SizeDelta: {x: 40, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1761344605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761344603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d4ea50fb37acc409edda7fa7850ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1761344606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114909291917686466, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761344603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &1761344607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114053426642256688, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761344603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1761344606}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1761344605}
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '"AfridoktaBodyShowcase"'
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!222 &1761344608
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222168826563652914, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761344603}
 --- !u!1 &1821652933
 GameObject:
   m_ObjectHideFlags: 0
@@ -6967,6 +10048,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1853458153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7009,6 +10114,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1853458152}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853458153}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1853458152}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1853458153}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1853458152}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7147,7 +10308,7 @@ GameObject:
   - component: {fileID: 1878931571}
   - component: {fileID: 1878931570}
   m_Layer: 0
-  m_Name: Point Light head
+  m_Name: Point Light head (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7163,9 +10324,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 20.201502
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 30.807337
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -7178,13 +10339,13 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967241
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 1.5
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -7196,11 +10357,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1878931569}
   m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
-  m_LocalPosition: {x: -0.63, y: 1.375, z: 0.478}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.016, y: 1.793, z: 0.43}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
 --- !u!1 &1904273549
 GameObject:
@@ -7364,6 +10525,71 @@ Transform:
   m_Father: {fileID: 1875489104}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1942015836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1942015837}
+  - component: {fileID: 1942015838}
+  m_Layer: 0
+  m_Name: Point Light UpperRightLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942015837
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942015836}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: 0.253, y: 0.793, z: 0.637}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &1942015838
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942015836}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 55.21641
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1955216746
 GameObject:
   m_ObjectHideFlags: 0
@@ -7425,6 +10651,71 @@ Transform:
   m_Father: {fileID: 1368304307}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1975449824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1975449825}
+  - component: {fileID: 1975449826}
+  m_Layer: 0
+  m_Name: Point Light UpperBack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1975449825
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975449824}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.014000021, y: 1.411, z: -0.459}
+  m_LocalScale: {x: 1.014142, y: 1.0141422, z: 1.0141422}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1975449826
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975449824}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 64.47253
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1978756435
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,6 +10766,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1978756438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7517,6 +10832,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1978756437}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1978756438}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1978756437}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1978756438}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1978756437}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7665,6 +11036,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!114 &1985568106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7707,6 +11102,62 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1985568105}
           m_MethodName: onClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1985568106}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1985568105}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1985568106}
+          m_MethodName: zoominview
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1985568105}
+          m_MethodName: leaveHover
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7839,6 +11290,40 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2002683714}
+          m_MethodName: onHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2002683714}
+          m_MethodName: leaveHover
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &2002683714
 MonoBehaviour:
@@ -7854,6 +11339,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightChest: {fileID: 0}
+  lightBelly: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightUpperBack: {fileID: 0}
+  lightLowerBack: {fileID: 0}
+  lightUpperLeftLeg: {fileID: 0}
+  lightUpperRightLeg: {fileID: 0}
+  lightLowerLeftLeg: {fileID: 0}
+  lightLowerRightLeg: {fileID: 0}
+  lightRightBiceps: {fileID: 0}
+  lightLeftBiceps: {fileID: 0}
+  lightRightForearms: {fileID: 0}
+  lightLeftForearms: {fileID: 0}
 --- !u!23 &2002683715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7919,6 +11428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2013427836}
   - component: {fileID: 2013427835}
+  - component: {fileID: 2013427837}
   m_Layer: 0
   m_Name: Male
   m_TagString: Untagged
@@ -7971,9 +11481,112 @@ Transform:
   - {fileID: 605671798}
   - {fileID: 723008035}
   - {fileID: 1105985290}
+  - {fileID: 1878931571}
+  - {fileID: 341045536}
+  - {fileID: 340692403}
+  - {fileID: 57378172}
+  - {fileID: 166970721}
+  - {fileID: 2080046492}
+  - {fileID: 1216519085}
+  - {fileID: 661545867}
+  - {fileID: 1049868185}
+  - {fileID: 906464920}
+  - {fileID: 1246298681}
+  - {fileID: 968053638}
+  - {fileID: 2017332956}
+  - {fileID: 1057174008}
+  - {fileID: 1975449825}
+  - {fileID: 1071624693}
+  - {fileID: 876376907}
+  - {fileID: 844816751}
+  - {fileID: 1942015837}
+  - {fileID: 972875267}
+  - {fileID: 1156300778}
+  - {fileID: 177063186}
+  - {fileID: 520601710}
+  - {fileID: 640919522}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013427837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013427834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8644cf1a1ae2fb4c800266464ede8da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedPart: 
+  text: 
+  text1: 
+--- !u!1 &2017332955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2017332956}
+  - component: {fileID: 2017332957}
+  m_Layer: 0
+  m_Name: Point Light head (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2017332956
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2017332955}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.41799995, y: 1.6907, z: -0.0131}
+  m_LocalScale: {x: 1.0141426, y: 1.0141422, z: 1.0141425}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!108 &2017332957
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2017332955}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 18.254221
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &2025732906
 GameObject:
   m_ObjectHideFlags: 0
@@ -8036,6 +11649,84 @@ Transform:
   m_Father: {fileID: 829095049}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036786476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1398547886888528, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2036786477}
+  - component: {fileID: 2036786479}
+  - component: {fileID: 2036786478}
+  m_Layer: 0
+  m_Name: Return
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2036786477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224743940603216668, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036786476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 654665390}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2036786478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114327762786022476, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036786476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Back
+--- !u!222 &2036786479
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222285397947070362, guid: d9e47a8fd60d56846a0eb8894a44080e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036786476}
 --- !u!1 &2057471673
 GameObject:
   m_ObjectHideFlags: 0
@@ -8210,6 +11901,71 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f07608153906b04487db542a53b42e0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2080046491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2080046492}
+  - component: {fileID: 2080046493}
+  m_Layer: 0
+  m_Name: Point Light Belly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2080046492
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080046491}
+  m_LocalRotation: {x: -0, y: -0.999217, z: -0, w: -0.039567664}
+  m_LocalPosition: {x: -0.045000017, y: 1.156, z: 0.45599997}
+  m_LocalScale: {x: 1.0141432, y: 1.0141422, z: 1.0141433}
+  m_Children: []
+  m_Father: {fileID: 2013427836}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: -184.53499, z: 0}
+--- !u!108 &2080046493
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080046491}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 0.9519521
+  m_SpotAngle: 55.14625
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1.5
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &2081493857
 GameObject:
   m_ObjectHideFlags: 0
