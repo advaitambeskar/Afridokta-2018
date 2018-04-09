@@ -182,6 +182,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1539336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,6 +549,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &138165517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,6 +1017,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &210610268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,6 +1208,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &220862684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1406,6 +1410,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &308778042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1663,6 +1668,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!136 &384837360
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2275,6 +2281,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &538493962
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2595,7 +2602,7 @@ GameObject:
   - component: {fileID: 574272715}
   - component: {fileID: 574272714}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2732,6 +2739,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &605671800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3354,6 +3362,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &673242411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,6 +3602,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &687593595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3838,7 +3848,7 @@ GameObject:
   - component: {fileID: 704745052}
   - component: {fileID: 704745051}
   m_Layer: 5
-  m_Name: Text1
+  m_Name: Text12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3978,6 +3988,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &723008037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4278,6 +4289,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &779271648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4597,6 +4609,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &860402835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5138,6 +5151,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &917335878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5538,6 +5552,7 @@ GameObject:
   - component: {fileID: 1015597484}
   - component: {fileID: 1015597483}
   - component: {fileID: 1015597482}
+  - component: {fileID: 1015597486}
   m_Layer: 5
   m_Name: LeftBodyPart
   m_TagString: Untagged
@@ -5625,6 +5640,19 @@ RectTransform:
   m_AnchoredPosition: {x: 2.4, y: 0.52}
   m_SizeDelta: {x: 1.71, y: 1.25}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1015597486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015597481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132fe39bd12cf0f45967fb7329b2476b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mytext: {fileID: 1326944253}
+  tManag: {fileID: 1368549401}
 --- !u!1 &1039862029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5729,6 +5757,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &1039862033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6221,6 +6250,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1105985292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6450,6 +6480,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1115896615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6970,6 +7001,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &1241160634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7551,6 +7583,7 @@ GameObject:
   - component: {fileID: 1368549397}
   - component: {fileID: 1368549399}
   - component: {fileID: 1368549398}
+  - component: {fileID: 1368549401}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -7617,6 +7650,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1368549401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368549396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8040b027f4331e4181b2cf8f2bb8e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLanguage: 0
 --- !u!1 &1371343514
 GameObject:
   m_ObjectHideFlags: 0
@@ -8088,6 +8133,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1497289152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8279,6 +8325,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1528182619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8739,6 +8786,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &1565399597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8929,6 +8977,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &1588206020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9323,6 +9372,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1652193189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9544,6 +9594,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1697652123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9765,6 +9816,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1853458153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10483,6 +10535,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1978756438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10753,6 +10806,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!114 &1985568106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11028,6 +11082,7 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
+  textManager: {fileID: 0}
 --- !u!23 &2002683715
 MeshRenderer:
   m_ObjectHideFlags: 0
