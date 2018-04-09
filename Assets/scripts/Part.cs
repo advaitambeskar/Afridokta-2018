@@ -18,9 +18,16 @@ public class Part : MonoBehaviour
     public Light lightUpperBack, lightLowerBack;
     public Light lightUpperLeftLeg, lightUpperRightLeg, lightLowerLeftLeg, lightLowerRightLeg;
     public Light lightRightBiceps, lightLeftBiceps, lightRightForearms, lightLeftForearms;
+
+    public GameObject atext;
+    public textbox textManager;
+
     // Use this for initialization
     void Start()
     {
+        atext = GameObject.Find("Text");
+        textManager = atext.GetComponent<textbox>();
+
         lightUpperHead1 = GameObject.Find("Point Light head (0)").GetComponent<Light>();
         lightUpperHead2 = GameObject.Find("Point Light head (1)").GetComponent<Light>();
         lightUpperHead3 = GameObject.Find("Point Light head (2)").GetComponent<Light>();
@@ -67,6 +74,9 @@ public class Part : MonoBehaviour
 
     public void onClick()
     {
+        //Add selection to textManager
+        textManager.add(this.gameObject);
+
         mytext.text = String.Copy(this.ToString());
         string temp = String.Copy(mytext.text.Substring(0, mytext.text.Length - 7));
         mytext.text = String.Copy(temp);
