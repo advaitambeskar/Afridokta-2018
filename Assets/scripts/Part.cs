@@ -18,15 +18,13 @@ public class Part : MonoBehaviour
     public Light lightUpperBack, lightLowerBack;
     public Light lightUpperLeftLeg, lightUpperRightLeg, lightLowerLeftLeg, lightLowerRightLeg;
     public Light lightRightBiceps, lightLeftBiceps, lightRightForearms, lightLeftForearms;
-
-    public GameObject atext;
+    
     public textbox textManager;
 
     // Use this for initialization
     void Start()
     {
-        atext = GameObject.Find("Text");
-        textManager = atext.GetComponent<textbox>();
+        textManager = GameObject.Find("LeftBodyPart").GetComponent<textbox>();
 
         lightUpperHead1 = GameObject.Find("Point Light head (0)").GetComponent<Light>();
         lightUpperHead2 = GameObject.Find("Point Light head (1)").GetComponent<Light>();
@@ -80,6 +78,7 @@ public class Part : MonoBehaviour
         mytext.text = String.Copy(this.ToString());
         string temp = String.Copy(mytext.text.Substring(0, mytext.text.Length - 7));
         mytext.text = String.Copy(temp);
+        textManager.add(this.gameObject);
         closeAllLight();
         GameObject.Find("Male").GetComponent<Public>().selectedPart = temp;
         this.selectedPart = GameObject.Find("Male").GetComponent<Public>().selectedPart;
@@ -279,8 +278,8 @@ public class Part : MonoBehaviour
     public void onHover()
     {
         closeAllLight();
-        mytext.text = this.ToString();
-        mytext.text = mytext.text.Substring(0, mytext.text.Length - 7);
+        //mytext.text = this.ToString();
+        //mytext.text = mytext.text.Substring(0, mytext.text.Length - 7);
         this.selectedPart = GameObject.Find("Male").GetComponent<Public>().selectedPart;
         if (mytext.text.Equals("UpperRightLeg"))
         {
@@ -598,12 +597,12 @@ public class Part : MonoBehaviour
 
     public void leaveHover() {
         closeAllLight();
-        mytext.text = "";
+        //mytext.text = "";
         mytext1.text = "";
         Debug.Log(this.selectedPart);
-        text = GameObject.Find("Male").GetComponent<Public>().text;
+        //text = GameObject.Find("Male").GetComponent<Public>().text;
         text1 = GameObject.Find("Male").GetComponent<Public>().text1;
-        mytext.text = text;
+        //mytext.text = text;
         mytext1.text = text1;
         switch (selectedPart) {
             case "UpperHead":
