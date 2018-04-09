@@ -86,14 +86,14 @@ public class Part : MonoBehaviour
         if (mytext.text.Equals("UpperRightLeg"))
         {
             lightUpperRightLeg.enabled = true;
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if (mytext.text.Equals("Knees"))
         {
             lightKnee1.enabled = true;
             lightKnee2.enabled = true;
-            mytext.text = mytext.text + " / Magoti";
+            //mytext.text = mytext.text + " / Magoti";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
            
         }
@@ -101,20 +101,20 @@ public class Part : MonoBehaviour
         {
             lightUpperLeftLeg.enabled = true;
             
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if(mytext.text.Equals("Belly"))
         {
             lightBelly.enabled = true;
-            mytext.text = mytext.text + " / Tumbo";
+            //mytext.text = mytext.text + " / Tumbo";
             mytext1.text = "Stomach ache\nVomiting";
            
         }
         else if(mytext.text.Equals("LowerRightLeg"))
         {
             lightLowerRightLeg.enabled = true;
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if (mytext.text.Equals("LowerHead"))
@@ -123,26 +123,26 @@ public class Part : MonoBehaviour
             lightLowerHead2.enabled = true;
             lightLowerHead3.enabled = true;
             lightLowerHead4.enabled = true;
-            mytext.text = mytext.text + " / Shingo";
+            //mytext.text = mytext.text + " / Shingo";
             mytext1.text = "Sore Throat\nVertigo\n";
         }
         else if (mytext.text.Equals("Lower Back"))
         {
             lightLowerBack.enabled = true;
-            mytext.text = mytext.text + " / Kurudi nyuma";
+            //mytext.text = mytext.text + " / Kurudi nyuma";
             mytext1.text = "Back Ache";
         }
         else if (mytext.text.Equals("LowerLeftLeg"))
         {
             lightLowerLeftLeg.enabled = true;
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if (mytext.text.Equals("Feet"))
         {
             lightFoot1.enabled = true;
             lightFoot2.enabled = true;
-            mytext.text = mytext.text + " / Viganja";
+            //mytext.text = mytext.text + " / Viganja";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
            
         }
@@ -152,7 +152,7 @@ public class Part : MonoBehaviour
             lightUpperHead2.enabled = true;
             lightUpperHead3.enabled = true;
             lightUpperHead4.enabled = true;
-            mytext.text = mytext.text + " / Kichwa cha juu";
+            //mytext.text = mytext.text + " / Kichwa cha juu";
             mytext1.text = "Headache\nEarache\nHearing Loss\nNose Bleed\n";
            
 
@@ -160,13 +160,13 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("UpperBack"))
         {
             lightUpperBack.enabled = true;
-            mytext.text = mytext.text + " / Nyuma ya nyuma";
+            //mytext.text = mytext.text + " / Nyuma ya nyuma";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if (mytext.text.Equals("Chest"))
         {
             lightChest.enabled = true;
-            mytext.text = mytext.text + " / Kifua";
+            //mytext.text = mytext.text + " / Kifua";
             mytext1.text = "Chest Pain\nHeart palpitations\nCough\nShortness of Breath";
            
         }
@@ -174,104 +174,104 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Right Biceps"))
         {
             lightRightBiceps.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right Forearms"))
         {
             lightRightForearms.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right Triceps"))
         {
-            mytext.text = mytext.text;
+            //mytext.text = mytext.text;
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right HandPinky"))
         {
-            mytext.text = mytext.text + " / Kidole kidogo";
+            //mytext.text = mytext.text + " / Kidole kidogo";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right HandRing"))
         {
-            mytext.text = mytext.text + " / Pete kidole";
+            //mytext.text = mytext.text + " / Pete kidole";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right HandMiddle"))
         {
-            mytext.text = mytext.text + " / Kidole cha kati";
+            //mytext.text = mytext.text + " / Kidole cha kati";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right HandIndex"))
         {
-            mytext.text = mytext.text + " / kidole cha kwanza";
+            //mytext.text = mytext.text + " / kidole cha kwanza";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Right HandThumb"))
         {
-            mytext.text = mytext.text + " / Kidole gumba";
+            //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Left Biceps"))
         {
             lightLeftBiceps.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Left Forearms"))
         {
             lightLeftForearms.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("Left Triceps"))
         {
-            mytext.text = mytext.text;
+            //mytext.text = mytext.text;
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("LeftHandPinky"))
         {
-            mytext.text = mytext.text + " / kidole kidogo";
+            //mytext.text = mytext.text + " / kidole kidogo";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("LeftHandring"))
         {
-            mytext.text = mytext.text + " / pete kidole";
+            //mytext.text = mytext.text + " / pete kidole";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("LeftHandMiddle"))
         {
-            mytext.text = mytext.text + " / kidole cha kati";
+            //mytext.text = mytext.text + " / kidole cha kati";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("LeftHandIndex"))
         {
-            mytext.text = mytext.text + " / kidole cha kwanza";
+            //mytext.text = mytext.text + " / kidole cha kwanza";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
         else if (mytext.text.Equals("LeftHandThumb"))
         {
-            mytext.text = mytext.text + " / Kidole gumba";
+            //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
-        GameObject.Find("Male").GetComponent<Public>().text = mytext.text;
+        //GameObject.Find("Male").GetComponent<Public>().text = mytext.text;
         GameObject.Find("Male").GetComponent<Public>().text1 = mytext1.text;
 
     }
@@ -285,7 +285,7 @@ public class Part : MonoBehaviour
         if (mytext.text.Equals("UpperRightLeg"))
         {
             lightUpperRightLeg.enabled = true;
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("UpperRightLeg"))
             {
@@ -300,7 +300,7 @@ public class Part : MonoBehaviour
         {
             lightKnee1.enabled = true;
             lightKnee2.enabled = true;
-            mytext.text = mytext.text + " / Magoti";
+            //mytext.text = mytext.text + " / Magoti";
             mytext1.text = "";
             if (selectedPart.Equals("Knees"))
             {
@@ -315,7 +315,7 @@ public class Part : MonoBehaviour
         {
             lightUpperLeftLeg.enabled = true;
             
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("UpperLeftLeg"))
             {
@@ -329,7 +329,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Belly"))
         {
             lightBelly.enabled = true;
-            mytext.text = mytext.text + " / Tumbo";
+            //mytext.text = mytext.text + " / Tumbo";
             mytext1.text = "";
             if (selectedPart.Equals("UpperHead"))
             {
@@ -343,7 +343,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("LowerRightLeg"))
         {
             lightLowerRightLeg.enabled = true;
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("LowerRightLeg"))
             {
@@ -360,7 +360,7 @@ public class Part : MonoBehaviour
             lightLowerHead2.enabled = true;
             lightLowerHead3.enabled = true;
             lightLowerHead4.enabled = true;
-            mytext.text = mytext.text + " / Shingo";
+            //mytext.text = mytext.text + " / Shingo";
             mytext1.text = "";
             if (selectedPart.Equals("LowerHead"))
             {
@@ -374,7 +374,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Lower Back"))
         {
             lightLowerBack.enabled = true;
-            mytext.text = mytext.text + " / Kurudi nyuma";
+            //mytext.text = mytext.text + " / Kurudi nyuma";
             mytext1.text = "";
             if (selectedPart.Equals("Lower Back"))
             {
@@ -388,7 +388,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("LowerLeftLeg"))
         {
             lightLowerLeftLeg.enabled = true;
-            mytext.text = mytext.text + " / Mguu";
+            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("LowerLeftLeg"))
             {
@@ -403,7 +403,7 @@ public class Part : MonoBehaviour
         {
             lightFoot1.enabled = true;
             lightFoot2.enabled = true;
-            mytext.text = mytext.text + " / Viganja";
+            //mytext.text = mytext.text + " / Viganja";
             mytext1.text = "";
             if (selectedPart.Equals("Feet"))
             {
@@ -420,7 +420,7 @@ public class Part : MonoBehaviour
             lightUpperHead2.enabled = true;
             lightUpperHead3.enabled = true;
             lightUpperHead4.enabled = true;
-            mytext.text = mytext.text + " / Kichwa cha juu";
+            //mytext.text = mytext.text + " / Kichwa cha juu";
             mytext1.text = "";
             if (selectedPart.Equals("UpperHead"))
             {
@@ -434,7 +434,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("UpperBack"))
         {
             lightUpperBack.enabled = true;
-            mytext.text = mytext.text + " / Nyuma ya nyuma";
+            //mytext.text = mytext.text + " / Nyuma ya nyuma";
             mytext1.text = "";
             if (selectedPart.Equals("UpperBack"))
             {
@@ -449,7 +449,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Chest"))
         {
             lightChest.enabled = true;
-            mytext.text = mytext.text + " / Kifua";
+            //mytext.text = mytext.text + " / Kifua";
             mytext1.text = "";
             if (selectedPart.Equals("Chest"))
             {
@@ -464,7 +464,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Right Biceps"))
         {
             lightRightBiceps.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Right Biceps"))
             {
@@ -479,7 +479,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Right Forearms"))
         {
             lightRightForearms.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Right Forearms"))
             {
@@ -493,44 +493,44 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Right Triceps"))
         {
-            mytext.text = mytext.text;
+            //mytext.text = mytext.text;
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandPinky"))
         {
-            mytext.text = mytext.text + " / Kidole kidogo";
+            //mytext.text = mytext.text + " / Kidole kidogo";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandRing"))
         {
-            mytext.text = mytext.text + " / Pete kidole";
+            //mytext.text = mytext.text + " / Pete kidole";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandMiddle"))
         {
-            mytext.text = mytext.text + " / Kidole cha kati";
+            //mytext.text = mytext.text + " / Kidole cha kati";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandIndex"))
         {
-            mytext.text = mytext.text + " / kidole cha kwanza";
+            //mytext.text = mytext.text + " / kidole cha kwanza";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandThumb"))
         {
-            mytext.text = mytext.text + " / Kidole gumba";
+            //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Left Biceps"))
         {
             lightLeftBiceps.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Left Biceps"))
             {
@@ -545,7 +545,7 @@ public class Part : MonoBehaviour
         else if (mytext.text.Equals("Left Forearms"))
         {
             lightLeftForearms.enabled = true;
-            mytext.text = mytext.text + " / Mikono";
+            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Left Forearms"))
             {
@@ -559,37 +559,37 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Left Triceps"))
         {
-            mytext.text = mytext.text;
+            //mytext.text = mytext.text;
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandPinky"))
         {
-            mytext.text = mytext.text + " / kidole kidogo";
+            //mytext.text = mytext.text + " / kidole kidogo";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandring"))
         {
-            mytext.text = mytext.text + " / pete kidole";
+            //mytext.text = mytext.text + " / pete kidole";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandMiddle"))
         {
-            mytext.text = mytext.text + " / kidole cha kati";
+            //mytext.text = mytext.text + " / kidole cha kati";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandIndex"))
         {
-            mytext.text = mytext.text + " / kidole cha kwanza";
+            //mytext.text = mytext.text + " / kidole cha kwanza";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandThumb"))
         {
-            mytext.text = mytext.text + " / Kidole gumba";
+            //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "";
         }
 

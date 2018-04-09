@@ -8,7 +8,7 @@ public class translationManager : MonoBehaviour {
     public enum language
     {
         English,
-        Africans
+        Swahili
     }
 
     public enum bodyPart {
@@ -49,6 +49,7 @@ public class translationManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        //TODO Reduce amount of duplicate declaration. 
         translations[(int) language.English,      (int) bodyPart.UpperHead]         = "Upper Head";
         translations[(int) language.English,      (int) bodyPart.LowerHead]         = "Lower Head";
         translations[(int) language.English,      (int) bodyPart.UpperBack]         = "Upper Back";
@@ -66,20 +67,51 @@ public class translationManager : MonoBehaviour {
         translations[(int) language.English,      (int) bodyPart.LeftHandMiddle]    = "Middle Finger (Left)";
         translations[(int) language.English,      (int) bodyPart.LeftHandRing]      = "Ring Finger (Left)";
         translations[(int) language.English,      (int) bodyPart.LeftHandPinky]     = "Pinky Finger (Left)";
-        translations[(int) language.English,      (int) bodyPart.LeftTriceps]       = "Triceps (Left)";
+        translations[(int) language.English,      (int) bodyPart.LeftHand]          = "Left Hand";
         translations[(int) language.English,      (int) bodyPart.LeftForearms]      = "Forearms (Left)";
         translations[(int) language.English,      (int) bodyPart.LeftBiceps]        = "Biceps (Left)";
-        translations[(int) language.English,      (int) bodyPart.LeftHand]          = "Left Hand";
+        translations[(int) language.English,      (int) bodyPart.LeftTriceps]       = "Triceps (Left)";
         translations[(int) language.English,      (int) bodyPart.RightHandThumb]    = "Thumb (Right)";
         translations[(int) language.English,      (int) bodyPart.RightHandIndex]    = "Index Finger (Right)";
         translations[(int) language.English,      (int) bodyPart.RightHandMiddle]   = "Middle Finger (Right)";
         translations[(int) language.English,      (int) bodyPart.RightHandRing]     = "Ring Finger (Right)";
         translations[(int) language.English,      (int) bodyPart.RightHandPinky]    = "Pinky Finger (Right)";
         translations[(int) language.English,      (int) bodyPart.RightHand]         = "Right Hand";
-        translations[(int) language.English,      (int) bodyPart.RightTriceps]      = "Triceps (Right)";
         translations[(int) language.English,      (int) bodyPart.RightForearms]     = "Forearms (Right)";
         translations[(int) language.English,      (int) bodyPart.RightBiceps]       = "Biceps (Right)";
-        translations[(int) language.Africans,     (int) bodyPart.Knees]             = "Knieë";
+        translations[(int) language.English,      (int) bodyPart.RightTriceps]      = "Triceps (Right)";
+        
+        //TODO: Make sure translations are correct
+        translations[(int) language.Swahili,      (int) bodyPart.UpperHead]         = "Kichwa cha juu";
+        translations[(int) language.Swahili,      (int) bodyPart.LowerHead]         = "Shingo";
+        translations[(int) language.Swahili,      (int) bodyPart.UpperBack]         = "Nyuma ya nyuma";
+        translations[(int) language.Swahili,      (int) bodyPart.LowerBack]         = "Kurudi nyuma";
+        translations[(int) language.Swahili,      (int) bodyPart.Feet]              = "Viganja";
+        translations[(int) language.Swahili,      (int) bodyPart.UpperRightLeg]     = "Mguu";
+        translations[(int) language.Swahili,      (int) bodyPart.LowerRightLeg]     = "Mguu";
+        translations[(int) language.Swahili,      (int) bodyPart.Knees]             = "Magoti";
+        translations[(int) language.Swahili,      (int) bodyPart.UpperLeftLeg]      = "Mguu";
+        translations[(int) language.Swahili,      (int) bodyPart.LowerLeftLeg]      = "Mguu";
+        translations[(int) language.Swahili,      (int) bodyPart.Chest]             = "Kifua";
+        translations[(int) language.Swahili,      (int) bodyPart.Belly]             = "Tumbo";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftHandThumb]     = "Kidole gumba";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftHandIndex]     = "Kidole cha kwanza";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftHandMiddle]    = "Kidole cha kati";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftHandRing]      = "Pete kidole";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftHandPinky]     = "Kidole kidogo";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftHand]          = "";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftForearms]      = "Mikono";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftBiceps]        = "Mikono";
+        translations[(int) language.Swahili,      (int) bodyPart.LeftTriceps]       = "";
+        translations[(int) language.Swahili,      (int) bodyPart.RightHandThumb]    = "Kidole gumba";
+        translations[(int) language.Swahili,      (int) bodyPart.RightHandIndex]    = "Kidole cha kwanza";
+        translations[(int) language.Swahili,      (int) bodyPart.RightHandMiddle]   = "Kidole cha kati";
+        translations[(int) language.Swahili,      (int) bodyPart.RightHandRing]     = "Pete Kidole";
+        translations[(int) language.Swahili,      (int) bodyPart.RightHandPinky]    = "Kidole kidogo";
+        translations[(int) language.Swahili,      (int) bodyPart.RightHand]         = "";
+        translations[(int) language.Swahili,      (int) bodyPart.RightForearms]     = "Mikono";
+        translations[(int) language.Swahili,      (int) bodyPart.RightBiceps]       = "Mikono";
+        translations[(int) language.Swahili,      (int) bodyPart.RightTriceps]      = "";
 
     }
 	
