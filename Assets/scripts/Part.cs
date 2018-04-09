@@ -18,8 +18,14 @@ public class Part : MonoBehaviour
     public Light lightUpperBack, lightLowerBack;
     public Light lightUpperLeftLeg, lightUpperRightLeg, lightLowerLeftLeg, lightLowerRightLeg;
     public Light lightRightBiceps, lightLeftBiceps, lightRightForearms, lightLeftForearms;
-    
+
+    public Light[] lightUpperHead, lightLowerHead, lightKnees, lightFeet;
+
     public textbox textManager;
+
+    private Color hoverColor = Color.yellow;
+    private Color selectColor = Color.red;
+    private Color hoverselColor = Color.orange;
 
     // Use this for initialization
     void Start()
@@ -36,8 +42,8 @@ public class Part : MonoBehaviour
         lightLowerHead3 = GameObject.Find("Point Light head (6)").GetComponent<Light>();
         lightLowerHead4 = GameObject.Find("Point Light head (7)").GetComponent<Light>();
 
-        lightChest = GameObject.Find("Point Light Chest").GetComponent<Light>();
-        lightBelly = GameObject.Find("Point Light Belly").GetComponent<Light>();
+        /*lightChest = GameObject.Find("Point Light Chest").GetComponent<Light>();
+        lightBelly = GameObject.Find("Point Light Belly").GetComponent<Light>();*/
 
         lightKnee1 = GameObject.Find("Point Light Knee (1)").GetComponent<Light>();
         lightKnee2 = GameObject.Find("Point Light Knee (2)").GetComponent<Light>();
@@ -45,7 +51,7 @@ public class Part : MonoBehaviour
         lightFoot1 = GameObject.Find("Point Light Foot (1)").GetComponent<Light>();
         lightFoot2 = GameObject.Find("Point Light Foot (2)").GetComponent<Light>();
 
-        lightUpperBack = GameObject.Find("Point Light UpperBack").GetComponent<Light>();
+        /*lightUpperBack = GameObject.Find("Point Light UpperBack").GetComponent<Light>();
         lightLowerBack = GameObject.Find("Point Light LowerBack").GetComponent<Light>();
 
         lightUpperLeftLeg = GameObject.Find("Point Light UpperLeftLeg").GetComponent<Light>();
@@ -56,8 +62,25 @@ public class Part : MonoBehaviour
         lightRightBiceps = GameObject.Find("Point Light RightBiceps").GetComponent<Light>();
         lightLeftBiceps = GameObject.Find("Point Light LeftBiceps").GetComponent<Light>();
         lightRightForearms = GameObject.Find("Point Light RightForearms").GetComponent<Light>();
-        lightLeftForearms = GameObject.Find("Point Light LeftForearms").GetComponent<Light>();
+        lightLeftForearms = GameObject.Find("Point Light LeftForearms").GetComponent<Light>();*/
 
+        lightChest = new Light[] { GameObject.Find("Point Light Chest").GetComponent<Light>() };
+        lightBelly = new Light[] { GameObject.Find("Point Light Belly").GetComponent<Light>() };
+        lightUpperBack = new Light[] { GameObject.Find("Point Light UpperBack").GetComponent<Light>() };
+        lightLowerBack = new Light[] { GameObject.Find("Point Light LowerBack").GetComponent<Light>() };
+        lightUpperLeftLeg = new Light[] { GameObject.Find("Point Light UpperLeftLeg").GetComponent<Light>() };
+        lightUpperRightLeg = new Light[] { GameObject.Find("Point Light UpperRightLeg").GetComponent<Light>() };
+        lightLowerLeftLeg = new Light[] { GameObject.Find("Point Light LowerLeftLeg").GetComponent<Light>() };
+        lightLowerRightLeg = new Light[] { GameObject.Find("Point Light LowerRightLeg").GetComponent<Light>() };
+        lightRightBiceps = new Light[] { GameObject.Find("Point Light RightBiceps").GetComponent<Light>() };
+        lightLeftBiceps = new Light[] { GameObject.Find("Point Light LeftBiceps").GetComponent<Light>() };
+        lightRightForearms = new Light[] { GameObject.Find("Point Light RightForearms").GetComponent<Light>() };
+        lightLeftForearms = new Light[] { GameObject.Find("Point Light LeftForearms").GetComponent<Light>() };
+
+        lightUpperHead = new Light[] { lightUpperHead1, lightUpperHead2, lightUpperHead3, lightUpperHead4 };
+        lightLowerHead = new Light[] { lightLowerHead1, lightLowerHead2, lightLowerHead3, lightLowerHead4 };
+        lightKnees     = new Light[] { lightKnee1, lightKnee2 };
+        lightFeet      = new Light[] { lightFoot1, lightFoot2 };
 
         selectedPart = "";
         text1 = "";
@@ -79,33 +102,39 @@ public class Part : MonoBehaviour
         string temp = String.Copy(mytext.text.Substring(0, mytext.text.Length - 7));
         mytext.text = String.Copy(temp);
         textManager.add(this.gameObject);
-        closeAllLight();
+
+        //closeAllLight();
         GameObject.Find("Male").GetComponent<Public>().selectedPart = temp;
         this.selectedPart = GameObject.Find("Male").GetComponent<Public>().selectedPart;
+
+        //toggleLight(temp);
+        toggleLight(getLight(temp));
+
+        /*
         if (mytext.text.Equals("UpperRightLeg"))
         {
-            lightUpperRightLeg.enabled = true;
+            //lightUpperRightLeg.enabled = true;
             //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if (mytext.text.Equals("Knees"))
         {
-            lightKnee1.enabled = true;
-            lightKnee2.enabled = true;
+            //lightKnee1.enabled = true;
+            //lightKnee2.enabled = true;
             //mytext.text = mytext.text + " / Magoti";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
            
         }
         else if(mytext.text.Equals("UpperLeftLeg"))
         {
-            lightUpperLeftLeg.enabled = true;
+            //lightUpperLeftLeg.enabled = true;
             
             //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
         else if(mytext.text.Equals("Belly"))
         {
-            lightBelly.enabled = true;
+            //lightBelly.enabled = true;
             //mytext.text = mytext.text + " / Tumbo";
             mytext1.text = "Stomach ache\nVomiting";
            
@@ -164,7 +193,7 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Chest"))
         {
-            lightChest.enabled = true;
+            lightChest.enabled = !lightChest.enabled;
             //mytext.text = mytext.text + " / Kifua";
             mytext1.text = "Chest Pain\nHeart palpitations\nCough\nShortness of Breath";
            
@@ -270,13 +299,18 @@ public class Part : MonoBehaviour
             mytext1.text = "Symptom1\nSymptom2\nSymptom3\nSymptom4\nSymptom5\n";
         }
 
+        else
+        {
+            Debug.Log("Invalid light text: " + mytext.text);
+        }*/
+
         //GameObject.Find("Male").GetComponent<Public>().text = mytext.text;
-        GameObject.Find("Male").GetComponent<Public>().text1 = mytext1.text;
+        //GameObject.Find("Male").GetComponent<Public>().text1 = mytext1.text;
 
     }
 
     public void onHover()
-    {
+    {/*
         closeAllLight();
         //mytext.text = this.ToString();
         //mytext.text = mytext.text.Substring(0, mytext.text.Length - 7);
@@ -590,13 +624,13 @@ public class Part : MonoBehaviour
         {
             //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "";
-        }
+        }*/
 
 
     }
 
     public void leaveHover() {
-        closeAllLight();
+        /*closeAllLight();
         //mytext.text = "";
         mytext1.text = "";
         Debug.Log(this.selectedPart);
@@ -614,7 +648,7 @@ public class Part : MonoBehaviour
                 break;
             case "Chest":
                 
-                lightChest.enabled = true;
+                lightChest.enabled = !(lightChest.enabled);
                 break;
             case "Belly":
                 //mytext.text = text;
@@ -667,8 +701,230 @@ public class Part : MonoBehaviour
                 lightRightForearms.enabled = true;
                 break;
 
+        }*/
+    }/*
+    public void lightHover(Light light)
+    {
+
+    }
+
+    public void lightLeaveHover(Light light)
+    {
+
+    }*/
+
+    public void lightClick(Light light)
+    {
+        if (light.color == hoverColor) { light.color = hoverselColor; }
+        else { light.color = hoverColor; }
+    }
+
+    public void toggleLight(Light light)
+    {
+        light.enabled = !light.enabled;
+    }
+
+    public void toggleLight(Light[] lights)
+    {
+        foreach (Light light in lights)
+        {
+            light.enabled = !light.enabled;
         }
-        
+    }
+
+    public Light[] getLight(string light)
+    {
+        switch (light) {
+            case "UpperHead":
+                return lightUpperHead;
+                break;
+            case "Chest":
+                return lightChest;
+                break;
+            case "Belly":
+                return lightBelly;
+                break;
+            case "Knees":
+                return lightKnees;
+                break;
+            case "Feet":
+                return lightFeet;
+                break;
+            case "LowerHead":
+                return lightLowerHead;
+                break;
+            case "UpperBack":
+                return lightUpperBack;
+                break;
+            case "Lower Back":
+                return lightLowerBack;
+                break;
+            case "LowerLeftLeg":
+                return lightLowerLeftLeg;
+                break;
+            case "UpperLeftLeg":
+                return lightUpperLeftLeg;
+                break;
+            case "LowerRightLeg":
+                return lightLowerRightLeg;
+                break;
+            case "UpperRightLeg":
+                return lightUpperRightLeg;
+                break;
+            case "Left Biceps":
+                return lightLeftBiceps;
+                break;
+            case "Left Forearms":
+                return lightLeftForearms;
+                break;
+            case "Right Biceps":
+                return lightRightBiceps;
+                break;
+            case "Right Forearms":
+                return lightRightForearms;
+                break;
+            default:
+                Debug.Log("Invalid light text: " + light);
+                break;
+        }
+    }
+
+    public void toggleLight(string light)
+    {
+        switch (light) {
+            case "UpperHead":
+                
+                lightUpperHead1.enabled = !lightUpperHead1.enabled;
+                lightUpperHead2.enabled = !lightUpperHead2.enabled;
+                lightUpperHead3.enabled = !lightUpperHead3.enabled;
+                lightUpperHead4.enabled = !lightUpperHead4.enabled;
+                break;
+            case "Chest":
+                
+                lightChest.enabled = !lightChest.enabled;
+                break;
+            case "Belly":
+
+                lightBelly.enabled = !lightBelly.enabled;
+                break;
+            case "Knees":
+                
+                lightKnee1.enabled = !lightKnee1.enabled;
+                lightKnee2.enabled = !lightKnee2.enabled;
+                break;
+            case "Feet":
+                lightFoot1.enabled = !lightFoot1.enabled;
+                lightFoot2.enabled = !lightFoot2.enabled;
+                break;
+            case "LowerHead":
+                lightLowerHead1.enabled = !lightLowerHead1.enabled;
+                lightLowerHead2.enabled = !lightLowerHead2.enabled;
+                lightLowerHead3.enabled = !lightLowerHead3.enabled;
+                lightLowerHead4.enabled = !lightLowerHead4.enabled;
+                break;
+            case "UpperBack":
+                lightUpperBack.enabled = !lightUpperBack.enabled;
+                break;
+            case "Lower Back":
+                lightLowerBack.enabled = !lightLowerBack.enabled;
+                break;
+            case "LowerLeftLeg":
+                lightLowerLeftLeg.enabled = !lightLowerLeftLeg.enabled;
+                break;
+            case "UpperLeftLeg":
+                lightUpperLeftLeg.enabled = !lightUpperLeftLeg.enabled;
+                break;
+            case "LowerRightLeg":
+                lightLowerRightLeg.enabled = !lightLowerRightLeg.enabled;
+                break;
+            case "UpperRightLeg":
+                lightUpperRightLeg.enabled = !lightUpperRightLeg.enabled;
+                break;
+            case "Left Biceps":
+                lightLeftBiceps.enabled = !lightLeftBiceps.enabled;
+                break;
+            case "Left Forearms":
+                lightLeftForearms.enabled = !lightLeftForearms.enabled;
+                break;
+            case "Right Biceps":
+                lightRightBiceps.enabled = !lightRightBiceps.enabled;
+                break;
+            case "Right Forearms":
+                lightRightForearms.enabled = !lightRightForearms.enabled;
+                break;
+            default:
+                Debug.Log("Invalid light text: " + light);
+                break;
+        }
+    }
+    
+    public void setLightColor(string light, string color)
+    {
+        switch (light) {
+            case "UpperHead":
+                
+                lightUpperHead1.enabled = !lightUpperHead1.enabled;
+                lightUpperHead2.enabled = !lightUpperHead2.enabled;
+                lightUpperHead3.enabled = !lightUpperHead3.enabled;
+                lightUpperHead4.enabled = !lightUpperHead4.enabled;
+                break;
+            case "Chest":
+                
+                lightChest.enabled = !lightChest.enabled;
+                break;
+            case "Belly":
+
+                lightBelly.enabled = !lightBelly.enabled;
+                break;
+            case "Knees":
+                
+                lightKnee1.enabled = !lightKnee1.enabled;
+                lightKnee2.enabled = !lightKnee2.enabled;
+                break;
+            case "Feet":
+                lightFoot1.enabled = !lightFoot1.enabled;
+                lightFoot2.enabled = !lightFoot2.enabled;
+                break;
+            case "LowerHead":
+                lightLowerHead1.enabled = !lightLowerHead1.enabled;
+                lightLowerHead2.enabled = !lightLowerHead2.enabled;
+                lightLowerHead3.enabled = !lightLowerHead3.enabled;
+                lightLowerHead4.enabled = !lightLowerHead4.enabled;
+                break;
+            case "UpperBack":
+                lightUpperBack.enabled = !lightUpperBack.enabled;
+                break;
+            case "Lower Back":
+                lightLowerBack.enabled = !lightLowerBack.enabled;
+                break;
+            case "LowerLeftLeg":
+                lightLowerLeftLeg.enabled = !lightLowerLeftLeg.enabled;
+                break;
+            case "UpperLeftLeg":
+                lightUpperLeftLeg.enabled = !lightUpperLeftLeg.enabled;
+                break;
+            case "LowerRightLeg":
+                lightLowerRightLeg.enabled = !lightLowerRightLeg.enabled;
+                break;
+            case "UpperRightLeg":
+                lightUpperRightLeg.enabled = !lightUpperRightLeg.enabled;
+                break;
+            case "Left Biceps":
+                lightLeftBiceps.enabled = !lightLeftBiceps.enabled;
+                break;
+            case "Left Forearms":
+                lightLeftForearms.enabled = !lightLeftForearms.enabled;
+                break;
+            case "Right Biceps":
+                lightRightBiceps.enabled = !lightRightBiceps.enabled;
+                break;
+            case "Right Forearms":
+                lightRightForearms.enabled = !lightRightForearms.enabled;
+                break;
+            default:
+                Debug.Log("Invalid light text: " + light);
+                break;
+        }
     }
 
     public void closeAllLight() {
