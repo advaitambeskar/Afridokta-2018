@@ -182,7 +182,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1539336
 MonoBehaviour:
@@ -550,7 +549,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &138165517
 MonoBehaviour:
@@ -1019,7 +1017,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &210610268
 MonoBehaviour:
@@ -1211,7 +1208,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &220862684
 MeshRenderer:
@@ -1414,7 +1410,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &308778042
 MeshRenderer:
@@ -1673,7 +1668,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!136 &384837360
 CapsuleCollider:
@@ -2287,7 +2281,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &538493962
 MeshRenderer:
@@ -2746,7 +2739,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &605671800
 MonoBehaviour:
@@ -3370,7 +3362,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &673242411
 MonoBehaviour:
@@ -3611,7 +3602,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &687593595
 MonoBehaviour:
@@ -3998,7 +3988,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &723008037
 MonoBehaviour:
@@ -4300,7 +4289,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &779271648
 MeshRenderer:
@@ -4621,7 +4609,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &860402835
 MeshRenderer:
@@ -5164,7 +5151,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &917335878
 MonoBehaviour:
@@ -5771,7 +5757,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &1039862033
 MeshRenderer:
@@ -6265,7 +6250,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1105985292
 MonoBehaviour:
@@ -6496,7 +6480,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1115896615
 MonoBehaviour:
@@ -7018,7 +7001,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &1241160634
 MeshRenderer:
@@ -8151,7 +8133,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1497289152
 MonoBehaviour:
@@ -8344,7 +8325,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1528182619
 MonoBehaviour:
@@ -8806,7 +8786,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &1565399597
 MeshRenderer:
@@ -8998,7 +8977,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &1588206020
 MeshRenderer:
@@ -9394,7 +9372,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1652193189
 MonoBehaviour:
@@ -9617,7 +9594,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1697652123
 MonoBehaviour:
@@ -9840,7 +9816,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1853458153
 MonoBehaviour:
@@ -10560,7 +10535,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1978756438
 MonoBehaviour:
@@ -10832,7 +10806,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!114 &1985568106
 MonoBehaviour:
@@ -11109,7 +11082,6 @@ MonoBehaviour:
   lightLeftBiceps: {fileID: 0}
   lightRightForearms: {fileID: 0}
   lightLeftForearms: {fileID: 0}
-  atext: {fileID: 0}
   textManager: {fileID: 0}
 --- !u!23 &2002683715
 MeshRenderer:

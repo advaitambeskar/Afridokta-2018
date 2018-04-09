@@ -617,7 +617,7 @@ public class Part : MonoBehaviour
                 lightChest.enabled = true;
                 break;
             case "Belly":
-                mytext.text = text;
+                //mytext.text = text;
                 mytext1.text = text1;
                 lightBelly.enabled = true;
                 break;
