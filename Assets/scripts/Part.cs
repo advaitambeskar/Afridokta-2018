@@ -82,10 +82,8 @@ public class Part : MonoBehaviour
     {
         //Add selection to textManager
         textManager.add(this.gameObject);
-
-        mytext.text = String.Copy(this.ToString());
-        string temp = String.Copy(mytext.text.Substring(0, mytext.text.Length - 7));
-        //mytext.text = String.Copy(temp);
+        
+        String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
         
         foreach (Light l in getLight(temp))
         {
@@ -95,8 +93,7 @@ public class Part : MonoBehaviour
 
     public void onHover()
     {
-        mytext.text = this.ToString();
-        String temp = mytext.text.Substring(0, mytext.text.Length - 7);
+        String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
 
         foreach (Light l in getLight(temp))
         {
@@ -104,9 +101,9 @@ public class Part : MonoBehaviour
         }
     }
 
-    public void leaveHover() {
-        mytext.text = this.ToString();
-        String temp = mytext.text.Substring(0, mytext.text.Length - 7);
+    public void leaveHover()
+    {
+        String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
         
         foreach (Light l in getLight(temp))
         {
