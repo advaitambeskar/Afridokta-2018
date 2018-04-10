@@ -12,20 +12,25 @@ public class Part : MonoBehaviour
     public Text mytext, mytext1;
     public Light lightUpperHead1, lightUpperHead2, lightUpperHead3, lightUpperHead4;
     public Light lightLowerHead1, lightLowerHead2, lightLowerHead3, lightLowerHead4;
-    public Light lightChest, lightBelly;
+    //public Light lightChest, lightBelly;
     public Light lightKnee1, lightKnee2;
     public Light lightFoot1, lightFoot2;
-    public Light lightUpperBack, lightLowerBack;
+    /*public Light lightUpperBack, lightLowerBack;
     public Light lightUpperLeftLeg, lightUpperRightLeg, lightLowerLeftLeg, lightLowerRightLeg;
-    public Light lightRightBiceps, lightLeftBiceps, lightRightForearms, lightLeftForearms;
+    public Light lightRightBiceps, lightLeftBiceps, lightRightForearms, lightLeftForearms;*/
+    
+    public Light[] lightChest, lightBelly;
+    public Light[] lightUpperBack, lightLowerBack;
+    public Light[] lightUpperLeftLeg, lightUpperRightLeg, lightLowerLeftLeg, lightLowerRightLeg;
+    public Light[] lightRightBiceps, lightLeftBiceps, lightRightForearms, lightLeftForearms;
 
     public Light[] lightUpperHead, lightLowerHead, lightKnees, lightFeet;
 
     public textbox textManager;
 
-    private Color hoverColor = Color.yellow;
+    private Color hoverColor = Color.cyan;
     private Color selectColor = Color.red;
-    private Color hoverselColor = Color.orange;
+    private Color hoverselColor = Color.yellow;
 
     // Use this for initialization
     void Start()
@@ -102,13 +107,14 @@ public class Part : MonoBehaviour
         string temp = String.Copy(mytext.text.Substring(0, mytext.text.Length - 7));
         mytext.text = String.Copy(temp);
         textManager.add(this.gameObject);
-
-        //closeAllLight();
+        
         GameObject.Find("Male").GetComponent<Public>().selectedPart = temp;
         this.selectedPart = GameObject.Find("Male").GetComponent<Public>().selectedPart;
-
-        //toggleLight(temp);
-        toggleLight(getLight(temp));
+        
+        foreach (Light l in getLight(temp))
+        {
+            lightClick(l);
+        }
 
         /*
         if (mytext.text.Equals("UpperRightLeg"))
@@ -310,15 +316,18 @@ public class Part : MonoBehaviour
     }
 
     public void onHover()
-    {/*
-        closeAllLight();
-        //mytext.text = this.ToString();
-        //mytext.text = mytext.text.Substring(0, mytext.text.Length - 7);
-        this.selectedPart = GameObject.Find("Male").GetComponent<Public>().selectedPart;
+    {
+        mytext.text = this.ToString();
+        String temp = mytext.text.Substring(0, mytext.text.Length - 7);
+
+        foreach (Light l in getLight(temp))
+        {
+            lightHover(l);
+        }
+
+        /*this.selectedPart = GameObject.Find("Male").GetComponent<Public>().selectedPart;
         if (mytext.text.Equals("UpperRightLeg"))
         {
-            lightUpperRightLeg.enabled = true;
-            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("UpperRightLeg"))
             {
@@ -331,9 +340,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Knees"))
         {
-            lightKnee1.enabled = true;
-            lightKnee2.enabled = true;
-            //mytext.text = mytext.text + " / Magoti";
             mytext1.text = "";
             if (selectedPart.Equals("Knees"))
             {
@@ -346,9 +352,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("UpperLeftLeg"))
         {
-            lightUpperLeftLeg.enabled = true;
-            
-            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("UpperLeftLeg"))
             {
@@ -361,8 +364,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Belly"))
         {
-            lightBelly.enabled = true;
-            //mytext.text = mytext.text + " / Tumbo";
             mytext1.text = "";
             if (selectedPart.Equals("UpperHead"))
             {
@@ -375,8 +376,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("LowerRightLeg"))
         {
-            lightLowerRightLeg.enabled = true;
-            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("LowerRightLeg"))
             {
@@ -389,11 +388,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("LowerHead"))
         {
-            lightLowerHead1.enabled = true;
-            lightLowerHead2.enabled = true;
-            lightLowerHead3.enabled = true;
-            lightLowerHead4.enabled = true;
-            //mytext.text = mytext.text + " / Shingo";
             mytext1.text = "";
             if (selectedPart.Equals("LowerHead"))
             {
@@ -406,8 +400,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Lower Back"))
         {
-            lightLowerBack.enabled = true;
-            //mytext.text = mytext.text + " / Kurudi nyuma";
             mytext1.text = "";
             if (selectedPart.Equals("Lower Back"))
             {
@@ -420,8 +412,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("LowerLeftLeg"))
         {
-            lightLowerLeftLeg.enabled = true;
-            //mytext.text = mytext.text + " / Mguu";
             mytext1.text = "";
             if (selectedPart.Equals("LowerLeftLeg"))
             {
@@ -434,9 +424,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("Feet"))
         {
-            lightFoot1.enabled = true;
-            lightFoot2.enabled = true;
-            //mytext.text = mytext.text + " / Viganja";
             mytext1.text = "";
             if (selectedPart.Equals("Feet"))
             {
@@ -449,11 +436,6 @@ public class Part : MonoBehaviour
         }
         else if (mytext.text.Equals("UpperHead"))
         {
-            lightUpperHead1.enabled = true;
-            lightUpperHead2.enabled = true;
-            lightUpperHead3.enabled = true;
-            lightUpperHead4.enabled = true;
-            //mytext.text = mytext.text + " / Kichwa cha juu";
             mytext1.text = "";
             if (selectedPart.Equals("UpperHead"))
             {
@@ -466,8 +448,6 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("UpperBack"))
         {
-            lightUpperBack.enabled = true;
-            //mytext.text = mytext.text + " / Nyuma ya nyuma";
             mytext1.text = "";
             if (selectedPart.Equals("UpperBack"))
             {
@@ -481,8 +461,6 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Chest"))
         {
-            lightChest.enabled = true;
-            //mytext.text = mytext.text + " / Kifua";
             mytext1.text = "";
             if (selectedPart.Equals("Chest"))
             {
@@ -496,8 +474,6 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Right Biceps"))
         {
-            lightRightBiceps.enabled = true;
-            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Right Biceps"))
             {
@@ -511,8 +487,6 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Right Forearms"))
         {
-            lightRightForearms.enabled = true;
-            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Right Forearms"))
             {
@@ -526,44 +500,36 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Right Triceps"))
         {
-            //mytext.text = mytext.text;
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandPinky"))
         {
-            //mytext.text = mytext.text + " / Kidole kidogo";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandRing"))
         {
-            //mytext.text = mytext.text + " / Pete kidole";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandMiddle"))
         {
-            //mytext.text = mytext.text + " / Kidole cha kati";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandIndex"))
         {
-            //mytext.text = mytext.text + " / kidole cha kwanza";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Right HandThumb"))
         {
-            //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("Left Biceps"))
         {
-            lightLeftBiceps.enabled = true;
-            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Left Biceps"))
             {
@@ -577,8 +543,6 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Left Forearms"))
         {
-            lightLeftForearms.enabled = true;
-            //mytext.text = mytext.text + " / Mikono";
             mytext1.text = "";
             if (selectedPart.Equals("Left Forearms"))
             {
@@ -592,37 +556,31 @@ public class Part : MonoBehaviour
 
         else if (mytext.text.Equals("Left Triceps"))
         {
-            //mytext.text = mytext.text;
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandPinky"))
         {
-            //mytext.text = mytext.text + " / kidole kidogo";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandring"))
         {
-            //mytext.text = mytext.text + " / pete kidole";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandMiddle"))
         {
-            //mytext.text = mytext.text + " / kidole cha kati";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandIndex"))
         {
-            //mytext.text = mytext.text + " / kidole cha kwanza";
             mytext1.text = "";
         }
 
         else if (mytext.text.Equals("LeftHandThumb"))
         {
-            //mytext.text = mytext.text + " / Kidole gumba";
             mytext1.text = "";
         }*/
 
@@ -630,106 +588,37 @@ public class Part : MonoBehaviour
     }
 
     public void leaveHover() {
-        /*closeAllLight();
+        mytext.text = this.ToString();
+        String temp = mytext.text.Substring(0, mytext.text.Length - 7);
+        
+        foreach (Light l in getLight(temp))
+        {
+            lightLeaveHover(l);
+        }
         //mytext.text = "";
         mytext1.text = "";
-        Debug.Log(this.selectedPart);
         //text = GameObject.Find("Male").GetComponent<Public>().text;
         text1 = GameObject.Find("Male").GetComponent<Public>().text1;
         //mytext.text = text;
-        mytext1.text = text1;
-        switch (selectedPart) {
-            case "UpperHead":
-                
-                lightUpperHead1.enabled = true;
-                lightUpperHead2.enabled = true;
-                lightUpperHead3.enabled = true;
-                lightUpperHead4.enabled = true;
-                break;
-            case "Chest":
-                
-                lightChest.enabled = !(lightChest.enabled);
-                break;
-            case "Belly":
-                //mytext.text = text;
-                mytext1.text = text1;
-                lightBelly.enabled = true;
-                break;
-            case "Knees":
-                
-                lightKnee1.enabled = true;
-                lightKnee2.enabled = true;
-                break;
-            case "Feet":
-                lightFoot1.enabled = true;
-                lightFoot2.enabled = true;
-                break;
-            case "LowerHead":
-                lightLowerHead1.enabled = true;
-                lightLowerHead2.enabled = true;
-                lightLowerHead3.enabled = true;
-                lightLowerHead4.enabled = true;
-                break;
-            case "UpperBack":
-                lightUpperBack.enabled = true;
-                break;
-            case "Lower Back":
-                lightLowerBack.enabled = true;
-                break;
-            case "LowerLeftLeg":
-                lightLowerLeftLeg.enabled = true;
-                break;
-            case "UpperLeftLeg":
-                lightUpperLeftLeg.enabled = true;
-                break;
-            case "LowerRightLeg":
-                lightLowerRightLeg.enabled = true;
-                break;
-            case "UpperRightLeg":
-                lightUpperRightLeg.enabled = true;
-                break;
-            case "Left Biceps":
-                lightLeftBiceps.enabled = true;
-                break;
-            case "Left Forearms":
-                lightLeftForearms.enabled = true;
-                break;
-            case "Right Biceps":
-                lightRightBiceps.enabled = true;
-                break;
-            case "Right Forearms":
-                lightRightForearms.enabled = true;
-                break;
-
-        }*/
-    }/*
+        //mytext1.text = text1;
+    }
     public void lightHover(Light light)
     {
-
+        if (light.color == selectColor) { light.color = hoverselColor; light.enabled = true; }
+        else if (light.color == hoverselColor) { Debug.Log("Error: Hover over light that already has hover color: " + light.ToString()); }
+        else { light.color = hoverColor; light.enabled = true; }
     }
 
     public void lightLeaveHover(Light light)
     {
-
-    }*/
+        if (light.color == hoverselColor) { light.color = selectColor; }
+        else { light.enabled = false; }
+    }
 
     public void lightClick(Light light)
     {
         if (light.color == hoverColor) { light.color = hoverselColor; }
         else { light.color = hoverColor; }
-    }
-
-    public void toggleLight(Light light)
-    {
-        light.enabled = !light.enabled;
-    }
-
-    public void toggleLight(Light[] lights)
-    {
-        foreach (Light light in lights)
-        {
-            light.enabled = !light.enabled;
-        }
     }
 
     public Light[] getLight(string light)
@@ -785,144 +674,7 @@ public class Part : MonoBehaviour
                 break;
             default:
                 Debug.Log("Invalid light text: " + light);
-                break;
-        }
-    }
-
-    public void toggleLight(string light)
-    {
-        switch (light) {
-            case "UpperHead":
-                
-                lightUpperHead1.enabled = !lightUpperHead1.enabled;
-                lightUpperHead2.enabled = !lightUpperHead2.enabled;
-                lightUpperHead3.enabled = !lightUpperHead3.enabled;
-                lightUpperHead4.enabled = !lightUpperHead4.enabled;
-                break;
-            case "Chest":
-                
-                lightChest.enabled = !lightChest.enabled;
-                break;
-            case "Belly":
-
-                lightBelly.enabled = !lightBelly.enabled;
-                break;
-            case "Knees":
-                
-                lightKnee1.enabled = !lightKnee1.enabled;
-                lightKnee2.enabled = !lightKnee2.enabled;
-                break;
-            case "Feet":
-                lightFoot1.enabled = !lightFoot1.enabled;
-                lightFoot2.enabled = !lightFoot2.enabled;
-                break;
-            case "LowerHead":
-                lightLowerHead1.enabled = !lightLowerHead1.enabled;
-                lightLowerHead2.enabled = !lightLowerHead2.enabled;
-                lightLowerHead3.enabled = !lightLowerHead3.enabled;
-                lightLowerHead4.enabled = !lightLowerHead4.enabled;
-                break;
-            case "UpperBack":
-                lightUpperBack.enabled = !lightUpperBack.enabled;
-                break;
-            case "Lower Back":
-                lightLowerBack.enabled = !lightLowerBack.enabled;
-                break;
-            case "LowerLeftLeg":
-                lightLowerLeftLeg.enabled = !lightLowerLeftLeg.enabled;
-                break;
-            case "UpperLeftLeg":
-                lightUpperLeftLeg.enabled = !lightUpperLeftLeg.enabled;
-                break;
-            case "LowerRightLeg":
-                lightLowerRightLeg.enabled = !lightLowerRightLeg.enabled;
-                break;
-            case "UpperRightLeg":
-                lightUpperRightLeg.enabled = !lightUpperRightLeg.enabled;
-                break;
-            case "Left Biceps":
-                lightLeftBiceps.enabled = !lightLeftBiceps.enabled;
-                break;
-            case "Left Forearms":
-                lightLeftForearms.enabled = !lightLeftForearms.enabled;
-                break;
-            case "Right Biceps":
-                lightRightBiceps.enabled = !lightRightBiceps.enabled;
-                break;
-            case "Right Forearms":
-                lightRightForearms.enabled = !lightRightForearms.enabled;
-                break;
-            default:
-                Debug.Log("Invalid light text: " + light);
-                break;
-        }
-    }
-    
-    public void setLightColor(string light, string color)
-    {
-        switch (light) {
-            case "UpperHead":
-                
-                lightUpperHead1.enabled = !lightUpperHead1.enabled;
-                lightUpperHead2.enabled = !lightUpperHead2.enabled;
-                lightUpperHead3.enabled = !lightUpperHead3.enabled;
-                lightUpperHead4.enabled = !lightUpperHead4.enabled;
-                break;
-            case "Chest":
-                
-                lightChest.enabled = !lightChest.enabled;
-                break;
-            case "Belly":
-
-                lightBelly.enabled = !lightBelly.enabled;
-                break;
-            case "Knees":
-                
-                lightKnee1.enabled = !lightKnee1.enabled;
-                lightKnee2.enabled = !lightKnee2.enabled;
-                break;
-            case "Feet":
-                lightFoot1.enabled = !lightFoot1.enabled;
-                lightFoot2.enabled = !lightFoot2.enabled;
-                break;
-            case "LowerHead":
-                lightLowerHead1.enabled = !lightLowerHead1.enabled;
-                lightLowerHead2.enabled = !lightLowerHead2.enabled;
-                lightLowerHead3.enabled = !lightLowerHead3.enabled;
-                lightLowerHead4.enabled = !lightLowerHead4.enabled;
-                break;
-            case "UpperBack":
-                lightUpperBack.enabled = !lightUpperBack.enabled;
-                break;
-            case "Lower Back":
-                lightLowerBack.enabled = !lightLowerBack.enabled;
-                break;
-            case "LowerLeftLeg":
-                lightLowerLeftLeg.enabled = !lightLowerLeftLeg.enabled;
-                break;
-            case "UpperLeftLeg":
-                lightUpperLeftLeg.enabled = !lightUpperLeftLeg.enabled;
-                break;
-            case "LowerRightLeg":
-                lightLowerRightLeg.enabled = !lightLowerRightLeg.enabled;
-                break;
-            case "UpperRightLeg":
-                lightUpperRightLeg.enabled = !lightUpperRightLeg.enabled;
-                break;
-            case "Left Biceps":
-                lightLeftBiceps.enabled = !lightLeftBiceps.enabled;
-                break;
-            case "Left Forearms":
-                lightLeftForearms.enabled = !lightLeftForearms.enabled;
-                break;
-            case "Right Biceps":
-                lightRightBiceps.enabled = !lightRightBiceps.enabled;
-                break;
-            case "Right Forearms":
-                lightRightForearms.enabled = !lightRightForearms.enabled;
-                break;
-            default:
-                Debug.Log("Invalid light text: " + light);
+                return null;
                 break;
         }
     }
@@ -933,8 +685,8 @@ public class Part : MonoBehaviour
         lightUpperHead2.enabled = false;
         lightUpperHead3.enabled = false;
         lightUpperHead4.enabled = false;
-        lightChest.enabled = false;
-        lightBelly.enabled = false;
+        lightChest[0].enabled = false;
+        lightBelly[0].enabled = false;
         lightKnee1.enabled = false;
         lightKnee2.enabled = false;
         lightFoot1.enabled = false;
@@ -943,15 +695,15 @@ public class Part : MonoBehaviour
         lightLowerHead2.enabled = false;
         lightLowerHead3.enabled = false;
         lightLowerHead4.enabled = false;
-        lightUpperBack.enabled = false;
-        lightLowerBack.enabled = false;
-        lightLowerLeftLeg.enabled = false;
-        lightUpperLeftLeg.enabled = false;
-        lightLowerRightLeg.enabled = false;
-        lightUpperRightLeg.enabled = false;
-        lightLeftBiceps.enabled = false;
-        lightLeftForearms.enabled = false;
-        lightRightBiceps.enabled = false;
-        lightRightForearms.enabled = false;
+        lightUpperBack[0].enabled = false;
+        lightLowerBack[0].enabled = false;
+        lightLowerLeftLeg[0].enabled = false;
+        lightUpperLeftLeg[0].enabled = false;
+        lightLowerRightLeg[0].enabled = false;
+        lightUpperRightLeg[0].enabled = false;
+        lightLeftBiceps[0].enabled = false;
+        lightLeftForearms[0].enabled = false;
+        lightRightBiceps[0].enabled = false;
+        lightRightForearms[0].enabled = false;
     }
 }
