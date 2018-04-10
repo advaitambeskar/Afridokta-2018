@@ -166,22 +166,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1539336
 MonoBehaviour:
@@ -533,22 +537,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &138165517
 MonoBehaviour:
@@ -1001,22 +1009,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &210610268
 MonoBehaviour:
@@ -1192,22 +1204,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &220862684
 MeshRenderer:
@@ -1394,22 +1410,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &308778042
 MeshRenderer:
@@ -1652,22 +1672,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!136 &384837360
 CapsuleCollider:
@@ -2265,22 +2289,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &538493962
 MeshRenderer:
@@ -2723,22 +2751,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &605671800
 MonoBehaviour:
@@ -3346,22 +3378,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &673242411
 MonoBehaviour:
@@ -3586,22 +3622,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &687593595
 MonoBehaviour:
@@ -3972,22 +4012,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &723008037
 MonoBehaviour:
@@ -4273,22 +4317,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &779271648
 MeshRenderer:
@@ -4593,22 +4641,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &860402835
 MeshRenderer:
@@ -5135,22 +5187,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &917335878
 MonoBehaviour:
@@ -5741,22 +5797,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &1039862033
 MeshRenderer:
@@ -6234,22 +6294,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1105985292
 MonoBehaviour:
@@ -6464,22 +6528,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1115896615
 MonoBehaviour:
@@ -6985,22 +7053,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &1241160634
 MeshRenderer:
@@ -7661,7 +7733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8040b027f4331e4181b2cf8f2bb8e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLanguage: 0
+  currentLanguage: 1
 --- !u!1 &1371343514
 GameObject:
   m_ObjectHideFlags: 0
@@ -8117,22 +8189,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1497289152
 MonoBehaviour:
@@ -8309,22 +8385,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1528182619
 MonoBehaviour:
@@ -8770,22 +8850,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &1565399597
 MeshRenderer:
@@ -8961,22 +9045,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &1588206020
 MeshRenderer:
@@ -9356,22 +9444,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1652193189
 MonoBehaviour:
@@ -9578,22 +9670,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1697652123
 MonoBehaviour:
@@ -9800,22 +9896,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1853458153
 MonoBehaviour:
@@ -10519,22 +10619,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1978756438
 MonoBehaviour:
@@ -10790,22 +10894,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!114 &1985568106
 MonoBehaviour:
@@ -11066,22 +11174,26 @@ MonoBehaviour:
   lightLowerHead2: {fileID: 0}
   lightLowerHead3: {fileID: 0}
   lightLowerHead4: {fileID: 0}
-  lightChest: {fileID: 0}
-  lightBelly: {fileID: 0}
   lightKnee1: {fileID: 0}
   lightKnee2: {fileID: 0}
   lightFoot1: {fileID: 0}
   lightFoot2: {fileID: 0}
-  lightUpperBack: {fileID: 0}
-  lightLowerBack: {fileID: 0}
-  lightUpperLeftLeg: {fileID: 0}
-  lightUpperRightLeg: {fileID: 0}
-  lightLowerLeftLeg: {fileID: 0}
-  lightLowerRightLeg: {fileID: 0}
-  lightRightBiceps: {fileID: 0}
-  lightLeftBiceps: {fileID: 0}
-  lightRightForearms: {fileID: 0}
-  lightLeftForearms: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
   textManager: {fileID: 0}
 --- !u!23 &2002683715
 MeshRenderer:
