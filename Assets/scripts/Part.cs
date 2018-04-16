@@ -23,6 +23,8 @@ public class Part : MonoBehaviour
     public Light[] lightUpperHead, lightLowerHead, lightKnees, lightFeet;
 
     public textbox textManager;
+	public Transform SymptomCanvas;
+	public Dictionary<string, List<string>> symptomsDictionary;
 
     private Color hoverColor = Color.cyan;
     private Color selectColor = Color.yellow;
@@ -70,6 +72,39 @@ public class Part : MonoBehaviour
         selectedPart = "";
         text1 = "";
         text = "";
+
+		symptomsDictionary = new Dictionary<string, List<string>>()
+		{
+			{"UpperRightLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Knees", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"UpperLeftLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"} },
+			{"Belly", new List<string> {"Diarrhea", "Constipation", "Loss of Appetite", "Swelling", "Weight Loss", "Other"}},
+			{"LowerRightLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LowerHead", new List<string> {"Vomiting", "Bleeding Gums", "Dry Mouth", "Stiff Neck", "Thirsty", "Other"}},
+			{"LowerBack",  new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LowerLeftLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Feet", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"UpperHead", new List<string> {"Headache", "Dizziness", "Eye Pain", "Fever", "Yellowing of Eyes", "Other"}},
+			{"UpperBack", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Chest", new List<string> {"Cough", "Short of Breath", "Chills", "Sweating", "Pain", "Other"}},
+			{"Right Biceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right Forearms", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right Triceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right HandPinky", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right HandRing", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right HandMiddle", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right HandIndex", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right HandThumb", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Left Biceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Left Forearms", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Left Triceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LeftHandPinky", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LeftHandring", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LeftHandMiddle", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LeftHandIndex", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LeftHandThumb", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+		};
+	
     }
 
     // Update is called once per frame
@@ -89,6 +124,22 @@ public class Part : MonoBehaviour
         {
             lightClick(l);
         }
+		GameObject[] symptomToggles;
+		symptomToggles = GameObject.FindGameObjectsWithTag ("Symptom");
+		foreach (GameObject symptomT in symptomToggles) {
+			Destroy (symptomT);
+		}
+		SymptomCanvas = GameObject.FindGameObjectWithTag ("SympCanvas").GetComponent<Transform>();
+		List<string> tempList = new List<string> ();
+		if (symptomsDictionary.TryGetValue (temp, out tempList)) {
+			for (int i = 0; i < tempList.Count; i++) {
+				GameObject newToggle = GameObject.Instantiate(Resources.Load("SymptomToggle")) as GameObject;
+				newToggle.transform.position = new Vector3 (0f, (i * -0.2f) + 0.5f, 0f);
+				newToggle.transform.SetParent(SymptomCanvas.transform, false);
+				newToggle.transform.Find ("Label").GetComponent<Text> ().text = tempList[i];
+				newToggle.SetActive(true);
+			}
+		}
     }
 
     public void onHover()

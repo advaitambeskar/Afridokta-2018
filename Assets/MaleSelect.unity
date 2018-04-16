@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4470002, g: 0.4968902, b: 0.5750587, a: 1}
+  m_IndirectSpecularColor: {r: 0.44700062, g: 0.49689054, b: 0.57505906, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1539336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +566,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &138165517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1125,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &210610268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1323,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &220862684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1506,6 +1510,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &308778042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1812,6 +1817,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!136 &384837360
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2429,6 +2435,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &538493962
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2897,6 +2904,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &605671800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,6 +3538,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &673242411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3776,6 +3785,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &687593595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3943,6 +3953,75 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687593592}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &690901835
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.196
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &690901836 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400008, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+  m_PrefabInternal: {fileID: 690901835}
+--- !u!1 &690901837 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
+  m_PrefabInternal: {fileID: 690901835}
+--- !u!114 &690901838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690901837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -768656878, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967279
+  m_MaxRayIntersections: 0
 --- !u!1 &704745049
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,6 +4289,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 2058500184}
 --- !u!114 &723008037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4517,6 +4597,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 2058500184}
 --- !u!23 &779271648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4843,6 +4924,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 2058500184}
 --- !u!23 &860402835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5393,6 +5475,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &917335878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6005,6 +6088,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &1039862033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6504,6 +6588,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1105985292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6740,6 +6825,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1115896615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7325,6 +7411,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &1241160634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8431,6 +8518,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1497289152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8629,6 +8717,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1528182619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9096,6 +9185,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &1565399597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9293,6 +9383,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &1588206020
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9694,6 +9785,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1652193189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9957,6 +10049,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1697652123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10185,6 +10278,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 2058500184}
 --- !u!114 &1853458153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10952,6 +11046,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1978756438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11229,6 +11324,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!114 &1985568106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11539,6 +11635,7 @@ MonoBehaviour:
   lightKnees: []
   lightFeet: []
   textManager: {fileID: 0}
+  SymptomCanvas: {fileID: 0}
 --- !u!23 &2002683715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11914,7 +12011,7 @@ GameObject:
   - component: {fileID: 2058500185}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: SympCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
