@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Welcome.unity
     guid: 96827469e18e52f4993514d7cf81277f
   - enabled: 1
-    path: Assets/maleorfemale.unity
+    path: Assets/Scenes/GenderSelect.unity
     guid: bd4f13cf48b54194a80edd07b043bb03
   - enabled: 1
     path: Assets/MaleSelect.unity
@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Standard Assets/femaleselect.unity
     guid: 826f92b89209acd49958b3402a8a102e
+  - enabled: 1
+    path: Assets/Scenes/FinalSymptomFile.unity
+    guid: bc942a0a29ade974db17f0642e00ff59
