@@ -116,7 +116,7 @@ public class Part : MonoBehaviour
     public void onClick()
     {
         //Add selection to textManager
-        textManager.add(this.gameObject);
+        textManager.toggle(this.gameObject);
         
         String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
         

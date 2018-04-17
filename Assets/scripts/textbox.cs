@@ -43,6 +43,19 @@ public class textbox : MonoBehaviour
         refresh();
     }
 
+    public void toggle(GameObject bPart)
+    {
+        if (!list.Contains(bPart))
+        {
+            list.Add(bPart);
+        }
+        else
+        {
+            list.Remove(bPart);
+        }
+        refresh();
+    }
+
     public void remove(GameObject bPart)
     {
         list.Remove(bPart);
