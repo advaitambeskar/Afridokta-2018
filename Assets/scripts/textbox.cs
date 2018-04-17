@@ -12,7 +12,7 @@ public class textbox : MonoBehaviour
     // Use this for initialization
     void Start () {
         mytext.text = "";
-        tManag = GameObject.Find("EventSystem").GetComponent<translationManager>();
+		tManag = GameObject.Find("GvrEventSystem").GetComponent<translationManager>();
 
     }
 	
