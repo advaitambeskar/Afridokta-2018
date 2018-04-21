@@ -25,6 +25,7 @@ public class Part : MonoBehaviour
     public textbox textManager;
 	public Transform SymptomCanvas;
 	public Dictionary<string, List<string>> symptomsDictionary;
+    public List<string> defaultSymptoms;
 
     private Color hoverColor = Color.cyan;
     private Color selectColor = Color.yellow;
@@ -64,6 +65,7 @@ public class Part : MonoBehaviour
         lightRightForearms = new Light[] { GameObject.Find("Point Light RightForearms").GetComponent<Light>() };
         lightLeftForearms = new Light[] { GameObject.Find("Point Light LeftForearms").GetComponent<Light>() };
 
+        //Declare lights that should be toggled together
         lightUpperHead = new Light[] { lightUpperHead1, lightUpperHead2, lightUpperHead3, lightUpperHead4 };
         lightLowerHead = new Light[] { lightLowerHead1, lightLowerHead2, lightLowerHead3, lightLowerHead4 };
         lightKnees     = new Light[] { lightKnee1, lightKnee2 };
@@ -73,36 +75,37 @@ public class Part : MonoBehaviour
         text1 = "";
         text = "";
 
+        defaultSymptoms = new List<string> { "Pain", "Swelling", "Weakness", "Redness", "Itching", "Other" };
 		symptomsDictionary = new Dictionary<string, List<string>>()
-		{
-			{"UpperRightLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Knees", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"UpperLeftLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"} },
+        {
+			{"UpperRightLeg", defaultSymptoms},
+			{"Knees", defaultSymptoms},
+			{"UpperLeftLeg", defaultSymptoms},
 			{"Belly", new List<string> {"Diarrhea", "Constipation", "Loss of Appetite", "Swelling", "Weight Loss", "Other"}},
-			{"LowerRightLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LowerRightLeg", defaultSymptoms},
 			{"LowerHead", new List<string> {"Vomiting", "Bleeding Gums", "Dry Mouth", "Stiff Neck", "Thirsty", "Other"}},
-			{"LowerBack",  new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"LowerLeftLeg", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Feet", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"LowerBack",  defaultSymptoms},
+			{"LowerLeftLeg", defaultSymptoms},
+			{"Feet", defaultSymptoms},
 			{"UpperHead", new List<string> {"Headache", "Dizziness", "Eye Pain", "Fever", "Yellowing of Eyes", "Other"}},
-			{"UpperBack", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"UpperBack", defaultSymptoms},
 			{"Chest", new List<string> {"Cough", "Short of Breath", "Chills", "Sweating", "Pain", "Other"}},
-			{"Right Biceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right Forearms", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right Triceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right HandPinky", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right HandRing", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right HandMiddle", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right HandIndex", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Right HandThumb", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Left Biceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Left Forearms", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"Left Triceps", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"LeftHandPinky", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"LeftHandring", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"LeftHandMiddle", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"LeftHandIndex", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
-			{"LeftHandThumb", new List<string> {"Pain", "Swelling", "Weakness", "Redness", "Itching", "Other"}},
+			{"Right Biceps", defaultSymptoms},
+			{"Right Forearms", defaultSymptoms},
+			{"Right Triceps", defaultSymptoms},
+			{"Right HandPinky", defaultSymptoms},
+			{"Right HandRing", defaultSymptoms},
+			{"Right HandMiddle", defaultSymptoms},
+			{"Right HandIndex", defaultSymptoms},
+			{"Right HandThumb", defaultSymptoms},
+			{"Left Biceps", defaultSymptoms},
+			{"Left Forearms", defaultSymptoms},
+			{"Left Triceps", defaultSymptoms},
+			{"LeftHandPinky", defaultSymptoms},
+			{"LeftHandring", defaultSymptoms},
+			{"LeftHandMiddle", defaultSymptoms},
+			{"LeftHandIndex", defaultSymptoms},
+			{"LeftHandThumb", defaultSymptoms},
 		};
 	
     }
@@ -118,20 +121,24 @@ public class Part : MonoBehaviour
         //Add selection to textManager
         textManager.toggle(this.gameObject);
         
+        //Toggle Light Selection
         String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
-        
         foreach (Light l in getLight(temp))
         {
             lightClick(l);
         }
+
+        //Symptoms
+        //Remove all symptomT from symptomToggles gameobject
 		GameObject[] symptomToggles;
 		symptomToggles = GameObject.FindGameObjectsWithTag ("Symptom");
 		foreach (GameObject symptomT in symptomToggles) {
 			Destroy (symptomT);
 		}
+        //Populate symptom canvas with the symptoms
 		SymptomCanvas = GameObject.FindGameObjectWithTag ("SympCanvas").GetComponent<Transform>();
 		List<string> tempList = new List<string> ();
-		if (symptomsDictionary.TryGetValue (temp, out tempList)) {
+		if (symptomsDictionary.TryGetValue (temp, out tempList)) { 
 			for (int i = 0; i < tempList.Count; i++) {
 				GameObject newToggle = GameObject.Instantiate(Resources.Load("SymptomToggle")) as GameObject;
 				newToggle.transform.position = new Vector3 (0f, (i * -0.2f) + 0.5f, 0f);
@@ -162,7 +169,7 @@ public class Part : MonoBehaviour
         }
     }
 
-
+    //Functions to set the color of lights when selected/hovered
     public void lightHover(Light light)
     {
         if (light.color == selectColor) { light.color = hoverselColor; light.enabled = true; }
