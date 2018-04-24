@@ -2,72 +2,77 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum language
+{
+    English,
+    Swahili
+}
+
+public enum bodyPart
+{
+    UpperHead,
+    LowerHead,
+    UpperBack,
+    LowerBack,
+    Feet,
+    UpperRightLeg,
+    LowerRightLeg,
+    Knees,
+    LowerLeftLeg,
+    UpperLeftLeg,
+    Chest,
+    Belly,
+    LeftHandThumb,
+    LeftHandIndex,
+    LeftHandMiddle,
+    LeftHandRing,
+    LeftHandPinky,
+    LeftTriceps,
+    LeftForearms,
+    LeftBiceps,
+    LeftHand,
+    RightHandThumb,
+    RightHandIndex,
+    RightHandMiddle,
+    RightHandRing,
+    RightHandPinky,
+    RightTriceps,
+    RightForearms,
+    RightBiceps,
+    RightHand
+}
+
+public enum symptom
+{
+    Pain,
+    Swelling,
+    Weakness,
+    Redness,
+    Itching,
+    Other,
+    Diarrhea,
+    Constipation,
+    LossOfAppetite,
+    WeightLoss,
+    Vomiting,
+    BleedingGums,
+    DryMouth,
+    StiffNeck,
+    Thirsty,
+    Headache,
+    Dizziness,
+    EyePain,
+    Fever,
+    YellowingOfEyes,
+    Cough,
+    ShortOfBreath,
+    Chills,
+    Sweating
+}
+
 public class translationManager : MonoBehaviour {
     public language currentLanguage;
 
-    public enum language
-    {
-        English,
-        Swahili
-    }
-
-    public enum bodyPart
-    {
-        UpperHead,
-        LowerHead,
-        UpperBack,
-        LowerBack,
-        Feet,
-        UpperRightLeg,
-        LowerRightLeg,
-        Knees,
-        LowerLeftLeg,
-        UpperLeftLeg,
-        Chest,
-        Belly,
-        LeftHandThumb,
-        LeftHandIndex,
-        LeftHandMiddle,
-        LeftHandRing,
-        LeftHandPinky,
-        LeftTriceps,
-        LeftForearms,
-        LeftBiceps,
-        LeftHand,
-        RightHandThumb,
-        RightHandIndex,
-        RightHandMiddle,
-        RightHandRing,
-        RightHandPinky,
-        RightTriceps,
-        RightForearms,
-        RightBiceps,
-        RightHand
-    }
-
-    public enum symptom
-    {
-        Pain,
-        Swelling,
-        Weakness,
-        Redness,
-        Itching,
-        Other,
-        Diarrhea,
-        Constipation,
-        LossOfAppetite,
-        WeightLoss,
-        Vomiting,
-        BleedingGums,
-        DryMouth,
-        StiffNeck,
-        Thirsty,
-        Headache,
-        Dizziness,
-        EyePain,
-        Fever,
-        YellowingOfEyes
-    }
 
     private string[,] bodyTranslations = new string[language.GetNames(typeof(language)).Length, bodyPart.GetNames(typeof(bodyPart)).Length];
     private string[,] symptomTrans = new string[language.GetNames(typeof(language)).Length, symptom.GetNames(typeof(symptom)).Length];
@@ -142,6 +147,7 @@ public class translationManager : MonoBehaviour {
         //English Symptom Translations
         symptomTrans[(int) language.English,      (int) symptom.Pain]            = "Pain";
         symptomTrans[(int) language.English,      (int) symptom.Swelling]        = "Swelling";
+        symptomTrans[(int) language.English,      (int) symptom.Weakness]        = "Weakness";
         symptomTrans[(int) language.English,      (int) symptom.Redness]         = "Redness";
         symptomTrans[(int) language.English,      (int) symptom.Itching]         = "Itching";
         symptomTrans[(int) language.English,      (int) symptom.Other]           = "Other";
@@ -159,6 +165,38 @@ public class translationManager : MonoBehaviour {
         symptomTrans[(int) language.English,      (int) symptom.EyePain]         = "Eye Pain";
         symptomTrans[(int) language.English,      (int) symptom.Fever]           = "Fever";
         symptomTrans[(int) language.English,      (int) symptom.YellowingOfEyes] = "Yellowing of Eyes";
+        symptomTrans[(int) language.English,      (int) symptom.Cough]           = "Cough";
+        symptomTrans[(int) language.English,      (int) symptom.ShortOfBreath]   = "Short of Breath";
+        symptomTrans[(int) language.English,      (int) symptom.Chills]          = "Chills";
+        symptomTrans[(int) language.English,      (int) symptom.Sweating]        = "Sweating";
+
+        //Swahili Symptom Translations
+        //TODO: Make sure translations are correct
+        symptomTrans[(int) language.Swahili,      (int) symptom.Pain]            = "Maumivu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Swelling]        = "Kuvimba";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Weakness]        = "Ukosefu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Redness]         = "Ukombozi";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Itching]         = "Kuvuta";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Other]           = "Nyingine";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Diarrhea]        = "Kuhara";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Constipation]    = "Kudumu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.LossOfAppetite]  = "Kupoteza hamu ya kula";
+        symptomTrans[(int) language.Swahili,      (int) symptom.WeightLoss]      = "Kupungua uzito";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Vomiting]        = "Kupiga kura";
+        symptomTrans[(int) language.Swahili,      (int) symptom.BleedingGums]    = "Utumbo wa kuvuta";
+        symptomTrans[(int) language.Swahili,      (int) symptom.DryMouth]        = "Mkavu Kavu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.StiffNeck]       = "Shingo Ngumu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Thirsty]         = "Kiu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Headache]        = "Kichwa cha kichwa";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Dizziness]       = "Kizunguzungu";
+        symptomTrans[(int) language.Swahili,      (int) symptom.EyePain]         = "Maumivu ya Jicho";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Fever]           = "Homa";
+        symptomTrans[(int) language.Swahili,      (int) symptom.YellowingOfEyes] = "Kupalika kwa Macho";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Cough]           = "Kukata";
+        symptomTrans[(int) language.Swahili,      (int) symptom.ShortOfBreath]   = "Pumzi fupi";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Chills]          = "Kukua";
+        symptomTrans[(int) language.Swahili,      (int) symptom.Sweating]        = "Kutapika";
+
     }
 	
 	// Update is called once per frame

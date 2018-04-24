@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class Part : MonoBehaviour
 {
     string selectedPart;
-    string text;
-    string text1;
     public Text mytext, mytext1;
     public Light lightUpperHead1, lightUpperHead2, lightUpperHead3, lightUpperHead4;
     public Light lightLowerHead1, lightLowerHead2, lightLowerHead3, lightLowerHead4;
@@ -23,6 +21,7 @@ public class Part : MonoBehaviour
     public Light[] lightUpperHead, lightLowerHead, lightKnees, lightFeet;
 
     public textbox textManager;
+    public symptomManager symManager;
 	public Transform SymptomCanvas;
 	public Dictionary<string, List<string>> symptomsDictionary;
     public List<string> defaultSymptoms;
@@ -35,6 +34,7 @@ public class Part : MonoBehaviour
     void Start()
     {
         textManager = GameObject.Find("LeftBodyPart").GetComponent<textbox>();
+        symManager = GameObject.Find("Text1").GetComponent<symptomManager>();
 
         lightUpperHead1 = GameObject.Find("Point Light head (0)").GetComponent<Light>();
         lightUpperHead2 = GameObject.Find("Point Light head (1)").GetComponent<Light>();
@@ -72,41 +72,6 @@ public class Part : MonoBehaviour
         lightFeet      = new Light[] { lightFoot1, lightFoot2 };
 
         selectedPart = "";
-        text1 = "";
-        text = "";
-
-        defaultSymptoms = new List<string> { "Pain", "Swelling", "Weakness", "Redness", "Itching", "Other" };
-		symptomsDictionary = new Dictionary<string, List<string>>()
-        {
-			{"UpperRightLeg", defaultSymptoms},
-			{"Knees", defaultSymptoms},
-			{"UpperLeftLeg", defaultSymptoms},
-			{"Belly", new List<string> {"Diarrhea", "Constipation", "Loss of Appetite", "Swelling", "Weight Loss", "Other"}},
-			{"LowerRightLeg", defaultSymptoms},
-			{"LowerHead", new List<string> {"Vomiting", "Bleeding Gums", "Dry Mouth", "Stiff Neck", "Thirsty", "Other"}},
-			{"LowerBack",  defaultSymptoms},
-			{"LowerLeftLeg", defaultSymptoms},
-			{"Feet", defaultSymptoms},
-			{"UpperHead", new List<string> {"Headache", "Dizziness", "Eye Pain", "Fever", "Yellowing of Eyes", "Other"}},
-			{"UpperBack", defaultSymptoms},
-			{"Chest", new List<string> {"Cough", "Short of Breath", "Chills", "Sweating", "Pain", "Other"}},
-			{"Right Biceps", defaultSymptoms},
-			{"Right Forearms", defaultSymptoms},
-			{"Right Triceps", defaultSymptoms},
-			{"Right HandPinky", defaultSymptoms},
-			{"Right HandRing", defaultSymptoms},
-			{"Right HandMiddle", defaultSymptoms},
-			{"Right HandIndex", defaultSymptoms},
-			{"Right HandThumb", defaultSymptoms},
-			{"Left Biceps", defaultSymptoms},
-			{"Left Forearms", defaultSymptoms},
-			{"Left Triceps", defaultSymptoms},
-			{"LeftHandPinky", defaultSymptoms},
-			{"LeftHandring", defaultSymptoms},
-			{"LeftHandMiddle", defaultSymptoms},
-			{"LeftHandIndex", defaultSymptoms},
-			{"LeftHandThumb", defaultSymptoms},
-		};
 	
     }
 
@@ -120,6 +85,7 @@ public class Part : MonoBehaviour
     {
         //Add selection to textManager
         textManager.toggle(this.gameObject);
+        symManager.setPart(this.gameObject);
         
         //Toggle Light Selection
         String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
@@ -135,18 +101,9 @@ public class Part : MonoBehaviour
 		foreach (GameObject symptomT in symptomToggles) {
 			Destroy (symptomT);
 		}
+
         //Populate symptom canvas with the symptoms
-		SymptomCanvas = GameObject.FindGameObjectWithTag ("SympCanvas").GetComponent<Transform>();
-		List<string> tempList = new List<string> ();
-		if (symptomsDictionary.TryGetValue (temp, out tempList)) { 
-			for (int i = 0; i < tempList.Count; i++) {
-				GameObject newToggle = GameObject.Instantiate(Resources.Load("SymptomToggle")) as GameObject;
-				newToggle.transform.position = new Vector3 (0f, (i * -0.2f) + 0.5f, 0f);
-				newToggle.transform.SetParent(SymptomCanvas.transform, false);
-				newToggle.transform.Find ("Label").GetComponent<Text> ().text = tempList[i];
-				newToggle.SetActive(true);
-			}
-		}
+        symManager.setPart(this.gameObject);
     }
 
     public void onHover()

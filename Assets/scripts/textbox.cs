@@ -21,6 +21,7 @@ public class textbox : MonoBehaviour
         
 	}
 
+    // Redraw TextBox
     void refresh()
     {
         mytext.text = "";
