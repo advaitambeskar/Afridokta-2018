@@ -7,6 +7,7 @@ public class textbox : MonoBehaviour
 {
     public Text mytext;
     List<GameObject> list = new List<GameObject>();
+    public Dictionary<bodyPart, List<symptom>> symptomsList;
     public translationManager tManag;
 
     // Use this for initialization
@@ -24,15 +25,56 @@ public class textbox : MonoBehaviour
     // Redraw TextBox
     void refresh()
     {
-        mytext.text = "";
-        for (int i = 0; i < list.Count; i++)
+        //List<symptom> tempList = new List<symptom> ();
+        //mytext.text = "";
+        //for (int i = 0; i < list.Count; i++)
+        //{
+        //    mytext.text += (tManag.getName(list[i]) + "\n");
+        //    if (symptomsList.TryGetValue(tManag.getIdentifier(list[i]), out tempList))
+        //    {
+        //        for (int j = 0; j < tempList.Count; j++)
+        //        {
+        //            mytext.text += ("    " + tManag.getName(tempList[j]) + "\n");
+        //        }
+        //    }
+        //}
+
+        for (int i = 0; i < language.GetNames(typeof(language)).Length; i++)
         {
-            if (i != 0)
+            mytext.text += (tManag.getName((bodyPart) i) + "\n");
+            
+		    List<symptom> tempList = new List<symptom> ();
+            if (symptomsList.TryGetValue((bodyPart) i, out tempList))
             {
-                mytext.text += "\n";
+                for (int j = 0; j < tempList.Count; j++)
+                {
+                    mytext.text += ("    " + tManag.getName(tempList[j]) + "\n");
+                }
             }
-            mytext.text += tManag.getName(list[i]);
         }
+    }
+    public void add(bodyPart part, symptom sym)
+    {
+		List<symptom> tempList = new List<symptom> ();
+        if(symptomsList.TryGetValue(part, out tempList))
+        {
+            symptomsList.Remove(part);
+            tempList.Add(sym);
+            symptomsList.Add(part, tempList);
+        }
+        refresh();
+    }
+
+    public void remove(bodyPart part, symptom sym)
+    {
+		List<symptom> tempList = new List<symptom> ();
+        if(symptomsList.TryGetValue(part, out tempList))
+        {
+            symptomsList.Remove(part);
+            tempList.Remove(sym);
+            symptomsList.Add(part, tempList);
+        }
+        refresh();
     }
 
     public void add(GameObject bPart)

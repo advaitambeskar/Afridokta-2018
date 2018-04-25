@@ -6450,34 +6450,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 0}
   mytext1: {fileID: 0}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   tManag: {fileID: 0}

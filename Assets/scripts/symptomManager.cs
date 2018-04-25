@@ -87,18 +87,31 @@ public class symptomManager : MonoBehaviour
         createList();
     }
 
+    public void toggleSymptom(symptom sym)
+    {
+        //Toggle symptom in symptom list
+
+
+        //Add to preview window
+        textManager.add(currentPart, sym);
+    }
+
     public void createList()
     {
         //Populate symptom canvas with the symptoms
 		SymptomCanvas = GameObject.FindGameObjectWithTag ("SympCanvas").GetComponent<Transform>();
 		List<symptom> tempList = new List<symptom> ();
-		List<Boolean> tempBool = new List<Boolean> ();
+		List<Boolean> boolList = new List<Boolean> ();
 		if (symptomsDictionary.TryGetValue (currentPart, out tempList)) { 
 			for (int i = 0; i < tempList.Count; i++) {
 				GameObject newToggle = GameObject.Instantiate(Resources.Load("SymptomToggle")) as GameObject;
 				newToggle.transform.position = new Vector3 (0f, (i * -0.2f) + 0.5f, 0f);
 				newToggle.transform.SetParent(SymptomCanvas.transform, false);
 				newToggle.transform.Find ("Label").GetComponent<Text> ().text = tManag.getName(tempList[i]);
+                if (symptomToggles.TryGetValue(currentPart, out boolList))
+                {
+                    newToggle.transform.GetComponent<Toggle>().isOn = boolList[i];
+                }
 				newToggle.SetActive(true);
 			}
 		}

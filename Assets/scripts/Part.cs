@@ -84,7 +84,7 @@ public class Part : MonoBehaviour
     public void onClick()
     {
         //Add selection to textManager
-        textManager.toggle(this.gameObject);
+        //textManager.toggle(this.gameObject);
         symManager.setPart(this.gameObject);
         
         //Toggle Light Selection
