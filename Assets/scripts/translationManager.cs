@@ -231,112 +231,112 @@ public class translationManager : MonoBehaviour {
         return getName(getIdentifier(part));
     }
 
-    public bodyPart getIdentifier(GameObject part)
-    {
-        return getIdentifier(part.ToString());
-    }
+    //public bodyPart getIdentifier(GameObject part)
+    //{
+    //    return getIdentifier(part.ToString());
+    //}
 
-    public bodyPart getIdentifier(string name)
-    {
-        //Name of body part gameObject
-        string tempName = name.Substring(0, name.Length - 25); //Remove (UnityEngine.GameObject)
-        switch (tempName)
-        {
-            case "UpperHead":
-                return bodyPart.UpperHead;
-                break;
-            case "LowerHead":
-                return bodyPart.LowerHead;
-                break;
-            case "UpperBack":
-                return bodyPart.UpperBack;
-                break;
-            case "Lower Back":
-                return bodyPart.LowerBack;
-                break;
-            case "Feet":
-                return bodyPart.Feet;
-                break;
-            case "UpperRightLeg":
-                return bodyPart.UpperRightLeg;
-                break;
-            case "LowerRightLeg":
-                return bodyPart.LowerRightLeg;
-                break;
-            case "Knees":
-                return bodyPart.Knees;
-                break;
-            case "UpperLeftLeg":
-                return bodyPart.UpperLeftLeg;
-                break;
-            case "LowerLeftLeg":
-                return bodyPart.LowerLeftLeg;
-                break;
-            case "Chest":
-                return bodyPart.Chest;
-                break;
-            case "Belly":
-                return bodyPart.Belly;
-                break;
-            case "LeftHandThumb":
-                return bodyPart.LeftHandThumb;
-                break;
-            case "LeftHandIndex":
-                return bodyPart.LeftHandIndex;
-                break;
-            case "LeftHandMiddle":
-                return bodyPart.LeftHandMiddle;
-                break;
-            case "LeftHandRing":
-                return bodyPart.LeftHandRing;
-                break;
-            case "LeftHandPinky":
-                return bodyPart.LeftHandPinky;
-                break;
-            case "Left Triceps":
-                return bodyPart.LeftTriceps;
-                break;
-            case "Left Forearms":
-                return bodyPart.LeftForearms;
-                break;
-            case "Left Biceps":
-                return bodyPart.LeftBiceps;
-                break;
-            case "LeftHandMale":
-                return bodyPart.LeftHand;
-                break;
-            case "Right HandThumb":
-                return bodyPart.RightHandThumb;
-                break;
-            case "Right HandIndex":
-                return bodyPart.RightHandIndex;
-                break;
-            case "Right HandMiddle":
-                return bodyPart.RightHandMiddle;
-                break;
-            case "Right HandRing":
-                return bodyPart.RightHandRing;
-                break;
-            case "Right HandPinky":
-                return bodyPart.RightHandPinky;
-                break;
-            case "RightHandMale":
-                return bodyPart.RightHand;
-                break;
-            case "Right Triceps":
-                return bodyPart.RightTriceps;
-                break;
-            case "Right Forearms":
-                return bodyPart.RightForearms;
-                break;
-            case "Right Biceps":
-                return bodyPart.RightBiceps;
-                break;
-        default:
-                Debug.Log("Error Name does not match any cases: " + tempName);
-                return bodyPart.UpperHead;
-                break;
-        }
-    }
+    //public bodyPart getIdentifier(string name)
+    //{
+    //    //Name of body part gameObject
+    //    string tempName = name.Substring(0, name.Length - 25); //Remove (UnityEngine.GameObject)
+    //    switch (tempName)
+    //    {
+    //        case "UpperHead":
+    //            return bodyPart.UpperHead;
+    //            break;
+    //        case "LowerHead":
+    //            return bodyPart.LowerHead;
+    //            break;
+    //        case "UpperBack":
+    //            return bodyPart.UpperBack;
+    //            break;
+    //        case "Lower Back":
+    //            return bodyPart.LowerBack;
+    //            break;
+    //        case "Feet":
+    //            return bodyPart.Feet;
+    //            break;
+    //        case "UpperRightLeg":
+    //            return bodyPart.UpperRightLeg;
+    //            break;
+    //        case "LowerRightLeg":
+    //            return bodyPart.LowerRightLeg;
+    //            break;
+    //        case "Knees":
+    //            return bodyPart.Knees;
+    //            break;
+    //        case "UpperLeftLeg":
+    //            return bodyPart.UpperLeftLeg;
+    //            break;
+    //        case "LowerLeftLeg":
+    //            return bodyPart.LowerLeftLeg;
+    //            break;
+    //        case "Chest":
+    //            return bodyPart.Chest;
+    //            break;
+    //        case "Belly":
+    //            return bodyPart.Belly;
+    //            break;
+    //        case "LeftHandThumb":
+    //            return bodyPart.LeftHandThumb;
+    //            break;
+    //        case "LeftHandIndex":
+    //            return bodyPart.LeftHandIndex;
+    //            break;
+    //        case "LeftHandMiddle":
+    //            return bodyPart.LeftHandMiddle;
+    //            break;
+    //        case "LeftHandRing":
+    //            return bodyPart.LeftHandRing;
+    //            break;
+    //        case "LeftHandPinky":
+    //            return bodyPart.LeftHandPinky;
+    //            break;
+    //        case "Left Triceps":
+    //            return bodyPart.LeftTriceps;
+    //            break;
+    //        case "Left Forearms":
+    //            return bodyPart.LeftForearms;
+    //            break;
+    //        case "Left Biceps":
+    //            return bodyPart.LeftBiceps;
+    //            break;
+    //        case "LeftHandMale":
+    //            return bodyPart.LeftHand;
+    //            break;
+    //        case "Right HandThumb":
+    //            return bodyPart.RightHandThumb;
+    //            break;
+    //        case "Right HandIndex":
+    //            return bodyPart.RightHandIndex;
+    //            break;
+    //        case "Right HandMiddle":
+    //            return bodyPart.RightHandMiddle;
+    //            break;
+    //        case "Right HandRing":
+    //            return bodyPart.RightHandRing;
+    //            break;
+    //        case "Right HandPinky":
+    //            return bodyPart.RightHandPinky;
+    //            break;
+    //        case "RightHandMale":
+    //            return bodyPart.RightHand;
+    //            break;
+    //        case "Right Triceps":
+    //            return bodyPart.RightTriceps;
+    //            break;
+    //        case "Right Forearms":
+    //            return bodyPart.RightForearms;
+    //            break;
+    //        case "Right Biceps":
+    //            return bodyPart.RightBiceps;
+    //            break;
+    //    default:
+    //            Debug.Log("Error Name does not match any cases: " + tempName);
+    //            return bodyPart.UpperHead;
+    //            break;
+    //    }
+    //}
 
 }

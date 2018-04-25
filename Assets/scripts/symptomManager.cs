@@ -126,7 +126,7 @@ public class symptomManager : MonoBehaviour
 				newToggle.transform.position = new Vector3 (0f, (i * -0.2f) + 0.5f, 0f);
 				newToggle.transform.SetParent(SymptomCanvas.transform, false);
 				newToggle.transform.Find ("Label").GetComponent<Text> ().text = tManag.getName(tempList[i]);
-                if (selectedSymptoms.TryGetValue(currentPart, out selectedList))
+                if (selectedSymptoms.Count != 0)
                 {
                     newToggle.transform.GetComponent<Toggle>().isOn = selectedList.Contains(tempList[i]);
                 }
