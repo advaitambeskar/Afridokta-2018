@@ -6454,6 +6454,7 @@ MonoBehaviour:
   SymptomCanvas: {fileID: 0}
   tManag: {fileID: 0}
   defaultSymptoms: 
+  selectedSymptoms: 
 --- !u!1 &1091731249
 GameObject:
   m_ObjectHideFlags: 0
@@ -7769,7 +7770,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 58
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
