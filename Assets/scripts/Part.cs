@@ -83,10 +83,6 @@ public class Part : MonoBehaviour
 
     public void onClick()
     {
-        //Add selection to textManager
-        //textManager.toggle(this.gameObject);
-        symManager.setPart(this.gameObject);
-        
         //Toggle Light Selection
         String temp = (this.ToString()).Substring(0, this.ToString().Length - 7);
         foreach (Light l in getLight(temp))
@@ -102,7 +98,7 @@ public class Part : MonoBehaviour
 			Destroy (symptomT);
 		}
 
-        //Populate symptom canvas with the symptoms
+        //Set symptom canvas with the selected part
         symManager.setPart(this.gameObject);
     }
 

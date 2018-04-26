@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class textbox : MonoBehaviour
 {
     public Text mytext;
-    List<GameObject> list = new List<GameObject>();
     public Dictionary<bodyPart, List<symptom>> symptomsList;
     public translationManager tManag;
 
@@ -14,6 +13,7 @@ public class textbox : MonoBehaviour
     void Start () {
         mytext.text = "";
 		tManag = GameObject.Find("GvrEventSystem").GetComponent<translationManager>();
+        symptomsList = new Dictionary<bodyPart, List<symptom>>() { };
 
     }
 	
@@ -25,27 +25,14 @@ public class textbox : MonoBehaviour
     // Redraw TextBox
     void refresh()
     {
-        //List<symptom> tempList = new List<symptom> ();
-        //mytext.text = "";
-        //for (int i = 0; i < list.Count; i++)
-        //{
-        //    mytext.text += (tManag.getName(list[i]) + "\n");
-        //    if (symptomsList.TryGetValue(tManag.getIdentifier(list[i]), out tempList))
-        //    {
-        //        for (int j = 0; j < tempList.Count; j++)
-        //        {
-        //            mytext.text += ("    " + tManag.getName(tempList[j]) + "\n");
-        //        }
-        //    }
-        //}
+        mytext.text = "";
 
-        for (int i = 0; i < language.GetNames(typeof(language)).Length; i++)
+        for (int i = 0; i < language.GetNames(typeof(bodyPart)).Length; i++)
         {
-            mytext.text += (tManag.getName((bodyPart) i) + "\n");
-            
 		    List<symptom> tempList = new List<symptom> ();
             if (symptomsList.TryGetValue((bodyPart) i, out tempList))
             {
+                mytext.text += (tManag.getName((bodyPart) i) + "\n");
                 for (int j = 0; j < tempList.Count; j++)
                 {
                     mytext.text += ("    " + tManag.getName(tempList[j]) + "\n");
@@ -58,8 +45,16 @@ public class textbox : MonoBehaviour
 		List<symptom> tempList = new List<symptom> ();
         if(symptomsList.TryGetValue(part, out tempList))
         {
-            symptomsList.Remove(part);
-            tempList.Add(sym);
+            if (!tempList.Contains(sym))
+            {
+                symptomsList.Remove(part);
+                tempList.Add(sym);
+                symptomsList.Add(part, tempList);
+            }
+        }
+        else
+        {
+            tempList = new List<symptom>() { sym };
             symptomsList.Add(part, tempList);
         }
         refresh();
@@ -70,42 +65,17 @@ public class textbox : MonoBehaviour
 		List<symptom> tempList = new List<symptom> ();
         if(symptomsList.TryGetValue(part, out tempList))
         {
-            symptomsList.Remove(part);
-            tempList.Remove(sym);
-            symptomsList.Add(part, tempList);
+            if (tempList.Contains(sym))
+            {
+                symptomsList.Remove(part);
+                tempList.Remove(sym);
+                if (tempList.Count != 0)
+                {
+                    symptomsList.Add(part, tempList);
+                }
+            }
         }
+        //else should be an error
         refresh();
-    }
-
-    public void add(GameObject bPart)
-    {
-        if (!list.Contains(bPart))
-        {
-            list.Add(bPart);
-        }
-        refresh();
-    }
-
-    public void toggle(GameObject bPart)
-    {
-        if (!list.Contains(bPart))
-        {
-            list.Add(bPart);
-        }
-        else
-        {
-            list.Remove(bPart);
-        }
-        refresh();
-    }
-
-    public void remove(GameObject bPart)
-    {
-        list.Remove(bPart);
-    }
-
-    public void clear()
-    {
-        list.Clear();
     }
 }

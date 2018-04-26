@@ -5,6 +5,7 @@ using UnityEngine;
 public class symptomCheck : MonoBehaviour {
     
     public symptomManager symManager;
+    public symptom mySymptom;
 	// Use this for initialization
 	void Start () {
         symManager = GameObject.Find("Text1").GetComponent<symptomManager>();
@@ -15,8 +16,8 @@ public class symptomCheck : MonoBehaviour {
 		
 	}
 
-    void onValueChanged()
+    public void ToggleValue()
     {
-        symManager.toggleSymptoms(this.GetComponent<Identifier>());
+        symManager.toggleSymptom(mySymptom);
     }
 }
