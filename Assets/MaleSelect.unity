@@ -163,36 +163,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1539336
@@ -539,36 +512,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &138165517
@@ -1100,36 +1046,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &210610268
@@ -1300,36 +1219,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &220862684
@@ -1489,36 +1381,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &308778042
@@ -1798,36 +1663,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!136 &384837360
@@ -2418,36 +2256,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &538493962
@@ -2889,36 +2700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &605671800
@@ -3525,36 +3309,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &673242411
@@ -3774,36 +3531,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &687593595
@@ -4211,36 +3941,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 2058500184}
   defaultSymptoms: []
 --- !u!114 &723008037
@@ -4521,36 +4224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 2058500184}
   defaultSymptoms: []
 --- !u!23 &779271648
@@ -4850,36 +4526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 2058500184}
   defaultSymptoms: []
 --- !u!23 &860402835
@@ -5403,36 +5052,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &917335878
@@ -6018,36 +5640,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &1039862033
@@ -6350,6 +5945,7 @@ GameObject:
   - component: {fileID: 1089647926}
   - component: {fileID: 1089647925}
   - component: {fileID: 1089647929}
+  - component: {fileID: 1089647930}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -6452,9 +6048,49 @@ MonoBehaviour:
   mytext1: {fileID: 0}
   textManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
+  lManag: {fileID: 0}
   tManag: {fileID: 0}
   defaultSymptoms: 
   selectedSymptoms: 
+--- !u!114 &1089647930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089647924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99feeb97160837a4888722cacc823f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightUpperHead1: {fileID: 0}
+  lightUpperHead2: {fileID: 0}
+  lightUpperHead3: {fileID: 0}
+  lightUpperHead4: {fileID: 0}
+  lightLowerHead1: {fileID: 0}
+  lightLowerHead2: {fileID: 0}
+  lightLowerHead3: {fileID: 0}
+  lightLowerHead4: {fileID: 0}
+  lightKnee1: {fileID: 0}
+  lightKnee2: {fileID: 0}
+  lightFoot1: {fileID: 0}
+  lightFoot2: {fileID: 0}
+  lightChest: []
+  lightBelly: []
+  lightUpperBack: []
+  lightLowerBack: []
+  lightUpperLeftLeg: []
+  lightUpperRightLeg: []
+  lightLowerLeftLeg: []
+  lightLowerRightLeg: []
+  lightRightBiceps: []
+  lightLeftBiceps: []
+  lightRightForearms: []
+  lightLeftForearms: []
+  lightUpperHead: []
+  lightLowerHead: []
+  lightKnees: []
+  lightFeet: []
 --- !u!1 &1091731249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6539,36 +6175,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1105985292
@@ -6778,36 +6387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1115896615
@@ -7366,36 +6948,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &1241160634
@@ -8475,36 +8030,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1497289152
@@ -8676,36 +8204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1528182619
@@ -9146,36 +8647,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &1565399597
@@ -9346,36 +8820,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &1588206020
@@ -9750,36 +9197,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1652193189
@@ -10016,36 +9436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1697652123
@@ -10247,36 +9640,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 2058500184}
   defaultSymptoms: []
 --- !u!114 &1853458153
@@ -11017,36 +10383,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1978756438
@@ -11297,36 +10636,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!114 &1985568106
@@ -11610,36 +10922,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mytext: {fileID: 1326944253}
   mytext1: {fileID: 704745051}
-  lightUpperHead1: {fileID: 0}
-  lightUpperHead2: {fileID: 0}
-  lightUpperHead3: {fileID: 0}
-  lightUpperHead4: {fileID: 0}
-  lightLowerHead1: {fileID: 0}
-  lightLowerHead2: {fileID: 0}
-  lightLowerHead3: {fileID: 0}
-  lightLowerHead4: {fileID: 0}
-  lightKnee1: {fileID: 0}
-  lightKnee2: {fileID: 0}
-  lightFoot1: {fileID: 0}
-  lightFoot2: {fileID: 0}
-  lightChest: []
-  lightBelly: []
-  lightUpperBack: []
-  lightLowerBack: []
-  lightUpperLeftLeg: []
-  lightUpperRightLeg: []
-  lightLowerLeftLeg: []
-  lightLowerRightLeg: []
-  lightRightBiceps: []
-  lightLeftBiceps: []
-  lightRightForearms: []
-  lightLeftForearms: []
-  lightUpperHead: []
-  lightLowerHead: []
-  lightKnees: []
-  lightFeet: []
   textManager: {fileID: 0}
   symManager: {fileID: 0}
+  lManager: {fileID: 0}
   SymptomCanvas: {fileID: 0}
   defaultSymptoms: []
 --- !u!23 &2002683715

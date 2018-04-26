@@ -12,6 +12,7 @@ public class symptomManager : MonoBehaviour
 
     public textbox textManager;
 	public Transform SymptomCanvas;
+    public lightManager lManag;
     public translationManager tManag;
 	public Dictionary<bodyPart, List<symptom>> symptomsDictionary;
     public List<symptom> defaultSymptoms;
@@ -25,6 +26,7 @@ public class symptomManager : MonoBehaviour
     {
 		tManag = GameObject.Find("GvrEventSystem").GetComponent<translationManager>();
         textManager = GameObject.Find("LeftBodyPart").GetComponent<textbox>();
+        lManag = GameObject.Find("Text1").GetComponent<lightManager>();
 
         selectedPart = "";
 
@@ -85,6 +87,11 @@ public class symptomManager : MonoBehaviour
 
     public void setPart(bodyPart part)
     {
+        // Set current part to unselected
+        // Set new part to selected
+        lManag.lightSelect(part);
+        lManag.lightUnselect(currentPart);
+
         // Store current selection list if part != currentPart
         // Load new selected Symptoms
         if( part != currentPart)
@@ -106,11 +113,16 @@ public class symptomManager : MonoBehaviour
         if (!selectedSymptoms.Contains(sym))
         {
             selectedSymptoms.Add(sym);
+            lManag.lightActivate(currentPart);
             textManager.add(currentPart, sym);
         }
         else
         {
             selectedSymptoms.Remove(sym);
+            if(selectedSymptoms.Count == 0)
+            {
+                lManag.lightDeactivate(currentPart);
+            }
             textManager.remove(currentPart, sym);
         }
     }
