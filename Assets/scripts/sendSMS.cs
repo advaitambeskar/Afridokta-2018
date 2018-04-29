@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SMSSENDER
 {
     public class sendSMS : MonoBehaviour
     {
         AndroidJavaObject currentActivity;
+		public Text mytext;
 
         public void Send(string phone)
         {
@@ -31,7 +33,9 @@ namespace SMSSENDER
             // SMS Information
 
             string phone = "+13522404231";
-            string text = "Hello World. This SMS is sent using Android SMS Manager on my Unity Application.";
+            //string text = "Hello World. This SMS is sent using Android SMS Manager on my Unity Application.";
+			mytext = GameObject.Find("Text").GetComponent<Text>();
+			string text = mytext.text;
             string alert;
 
             try

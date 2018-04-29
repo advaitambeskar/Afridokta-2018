@@ -7,10 +7,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using SMSSENDER;
-
+using UnityEngine.UI;
 
 public class sendEmailSMS : MonoBehaviour {
     string message = "NULL";
+	public Text mytext;
    
     public void sendText()
     {
@@ -20,6 +21,7 @@ public class sendEmailSMS : MonoBehaviour {
     }
     public void sendEmail ()
     {
+		message = mytext.text;
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress("vrforafrica.test1@gmail.com");
         mail.To.Add("vrforafrica.test2@gmail.com");
