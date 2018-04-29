@@ -8,18 +8,26 @@ public class textbox : MonoBehaviour
     public Text mytext;
     public Dictionary<bodyPart, List<symptom>> symptomsList;
     public translationManager tManag;
-
+	public GameObject sendMessage;
     // Use this for initialization
     void Start () {
         mytext.text = "";
 		tManag = GameObject.Find("GvrEventSystem").GetComponent<translationManager>();
         symptomsList = new Dictionary<bodyPart, List<symptom>>() { };
 
+		sendMessage = GameObject.Find ("Button");
+		sendMessage.SetActive(false);
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
+		if (symptomsList.Count > 0) {
+			sendMessage.SetActive (true);
+		}
+		if (symptomsList.Count == 0) {
+			sendMessage.SetActive (false);
+		}
 	}
 
     // Redraw TextBox

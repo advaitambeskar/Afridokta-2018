@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Symptom
   - SympCanvas
+  - doctor
   layers:
   - Default
   - TransparentFX
