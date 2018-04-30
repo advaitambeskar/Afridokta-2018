@@ -77,10 +77,10 @@ public class lightManager : MonoBehaviour {
             {bodyPart.UpperBack,      lightUpperBack},
             {bodyPart.Chest,          lightChest},
             {bodyPart.RightBiceps,    lightRightBiceps},
-            {bodyPart.RightForearms,  lightLeftForearms},
+            {bodyPart.RightForearms,  lightRightForearms},
             //{bodyPart.RightTriceps,   },
             {bodyPart.LeftBiceps,     lightLeftBiceps},
-            {bodyPart.LeftForearms,   lightRightForearms},
+            {bodyPart.LeftForearms,   lightLeftForearms},
             //{bodyPart.LeftTriceps,    }
         };
 	}

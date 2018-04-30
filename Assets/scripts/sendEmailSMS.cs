@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SMSSENDER;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class sendEmailSMS : MonoBehaviour {
     string message = "NULL";
@@ -39,5 +40,6 @@ public class sendEmailSMS : MonoBehaviour {
                 };
         smtp.Send(mail);
         Debug.Log("Email.sent!");
+		SceneManager.LoadScene("AfterSendSMS");
     }
 }
