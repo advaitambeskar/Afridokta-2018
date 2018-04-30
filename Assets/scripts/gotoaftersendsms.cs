@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class gotobodysel : MonoBehaviour {
+public class gotoaftersendsms : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
-    public void gotomale()
+    public void gotoaftersend()
     {
-        SceneManager.LoadScene("GenderSelect");
+        SceneManager.LoadScene("AfterSendSMS");
 
     }
 }
