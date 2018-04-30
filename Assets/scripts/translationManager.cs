@@ -5,7 +5,8 @@ using UnityEngine;
 public enum language
 {
     English,
-    Swahili
+    Swahili,
+    Afrikans
 }
 
 public enum bodyPart
@@ -143,6 +144,38 @@ public class translationManager : MonoBehaviour {
         bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightForearms]     = "Mikono";
         bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightBiceps]       = "Mikono";
         bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightTriceps]      = "";
+
+        //TODO: Make sure translations are correct
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.UpperHead]         = "Boonkop";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LowerHead]         = "Onderkop";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.UpperBack]         = "Boonste rug";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LowerBack]         = "Laerug";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.Feet]              = "Voete";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.UpperRightLeg]     = "Boonste regterbeen";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LowerRightLeg]     = "Onderste regterbeen";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.Knees]             = "Knieë";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.UpperLeftLeg]      = "Boonste linkerbeen";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LowerLeftLeg]      = "Boonste regterbeen";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.Chest]             = "Borskas";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.Belly]             = "Maag";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftHandThumb]     = "Linkerhand duim";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftHandIndex]     = "Linkerhand wysvinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftHandMiddle]    = "Linkervinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftHandRing]      = "Linkerhandse ringvinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftHandPinky]     = "Linkerhand pienkvinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftHand]          = "Linkerhand";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftForearms]      = "Linker onderarms";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftBiceps]        = "Links biceps";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.LeftTriceps]       = "Links triceps";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightHandThumb]    = "Regterhand duim";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightHandIndex]    = "Regterhand wysvinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightHandMiddle]   = "Regterhandvinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightHandRing]     = "Regterhandse vinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightHandPinky]    = "Regterhandse pienkvinger";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightHand]         = "Regter hand";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightForearms]     = "Regter onderarms";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightBiceps]       = "Regte biceps";
+        bodyTranslations[(int) language.Afrikans,      (int) bodyPart.RightTriceps]      = "Regte triceps";
         
         //English Symptom Translations
         symptomTrans[(int) language.English,      (int) symptom.Pain]            = "Pain";
@@ -196,6 +229,33 @@ public class translationManager : MonoBehaviour {
         symptomTrans[(int) language.Swahili,      (int) symptom.ShortOfBreath]   = "Pumzi fupi";
         symptomTrans[(int) language.Swahili,      (int) symptom.Chills]          = "Kukua";
         symptomTrans[(int) language.Swahili,      (int) symptom.Sweating]        = "Kutapika";
+
+        //Afrikans Symptom Translations
+        //TODO: Make sure translations are correct
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Pain]            = "Pyn";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Swelling]        = "Swelsel";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Weakness]        = "Swakheid";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Redness]         = "Rooi";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Itching]         = "Jeuk";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Other]           = "Ander";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Diarrhea]        = "Diarree";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Constipation]    = "Hardlywig";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.LossOfAppetite]  = "Eetlus verloor";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.WeightLoss]      = "Gewigsverlies";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Vomiting]        = "Braking";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.BleedingGums]    = "Bloeding tandvleis";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.DryMouth]        = "Droë mond";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.StiffNeck]       = "Stywe nek";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Thirsty]         = "Dors";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Headache]        = "Hoofpyn";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Dizziness]       = "Duiseligheid";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.EyePain]         = "Oogpyn";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Fever]           = "Koors";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.YellowingOfEyes] = "Vergeling van oë";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Cough]           = "Hoes";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.ShortOfBreath]   = "Kort van asem";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Chills]          = "Kouekoors";
+        symptomTrans[(int) language.Afrikans,      (int) symptom.Sweating]        = "Sweet";
 
     }
 	
