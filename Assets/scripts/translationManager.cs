@@ -5,7 +5,9 @@ using UnityEngine;
 public enum language
 {
     English,
-    Swahili
+    Swahili,
+    Afrikans,
+    French
 }
 
 public enum bodyPart
@@ -76,126 +78,265 @@ public class translationManager : MonoBehaviour {
 
     private string[,] bodyTranslations = new string[language.GetNames(typeof(language)).Length, bodyPart.GetNames(typeof(bodyPart)).Length];
     private string[,] symptomTrans = new string[language.GetNames(typeof(language)).Length, symptom.GetNames(typeof(symptom)).Length];
+    private string[] bodyTemp = new string[bodyPart.GetName(typeof(bodyPart)).Length];
+    private string[] symTemp = new string[symptom.GetName(typeof(symptom)).Length];
 
     // Use this for initialization
     void Start ()
     {
-        //TODO Reduce amount of duplicate declaration. 
-        bodyTranslations[(int) language.English,      (int) bodyPart.UpperHead]         = "Upper Head";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LowerHead]         = "Lower Head";
-        bodyTranslations[(int) language.English,      (int) bodyPart.UpperBack]         = "Upper Back";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LowerBack]         = "Lower Back";
-        bodyTranslations[(int) language.English,      (int) bodyPart.Feet]              = "Feet";
-        bodyTranslations[(int) language.English,      (int) bodyPart.UpperRightLeg]     = "Upper Right Leg";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LowerRightLeg]     = "Lower Right Leg";
-        bodyTranslations[(int) language.English,      (int) bodyPart.Knees]             = "Knees";
-        bodyTranslations[(int) language.English,      (int) bodyPart.UpperLeftLeg]      = "Upper Left Leg";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LowerLeftLeg]      = "Lower Left Leg";
-        bodyTranslations[(int) language.English,      (int) bodyPart.Chest]             = "Chest";
-        bodyTranslations[(int) language.English,      (int) bodyPart.Belly]             = "Belly";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftHandThumb]     = "Thumb (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftHandIndex]     = "Index Finger (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftHandMiddle]    = "Middle Finger (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftHandRing]      = "Ring Finger (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftHandPinky]     = "Pinky Finger (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftHand]          = "Left Hand";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftForearms]      = "Forearms (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftBiceps]        = "Biceps (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.LeftTriceps]       = "Triceps (Left)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightHandThumb]    = "Thumb (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightHandIndex]    = "Index Finger (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightHandMiddle]   = "Middle Finger (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightHandRing]     = "Ring Finger (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightHandPinky]    = "Pinky Finger (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightHand]         = "Right Hand";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightForearms]     = "Forearms (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightBiceps]       = "Biceps (Right)";
-        bodyTranslations[(int) language.English,      (int) bodyPart.RightTriceps]      = "Triceps (Right)";
+        //English Body Part Translations
+        bodyTemp[(int) bodyPart.UpperHead]         = "Upper Head";
+        bodyTemp[(int) bodyPart.LowerHead]         = "Lower Head";
+        bodyTemp[(int) bodyPart.UpperBack]         = "Upper Back";
+        bodyTemp[(int) bodyPart.LowerBack]         = "Lower Back";
+        bodyTemp[(int) bodyPart.Feet]              = "Feet";
+        bodyTemp[(int) bodyPart.UpperRightLeg]     = "Upper Right Leg";
+        bodyTemp[(int) bodyPart.LowerRightLeg]     = "Lower Right Leg";
+        bodyTemp[(int) bodyPart.Knees]             = "Knees";
+        bodyTemp[(int) bodyPart.UpperLeftLeg]      = "Upper Left Leg";
+        bodyTemp[(int) bodyPart.LowerLeftLeg]      = "Lower Left Leg";
+        bodyTemp[(int) bodyPart.Chest]             = "Chest";
+        bodyTemp[(int) bodyPart.Belly]             = "Belly";
+        bodyTemp[(int) bodyPart.LeftHandThumb]     = "Thumb (Left)";
+        bodyTemp[(int) bodyPart.LeftHandIndex]     = "Index Finger (Left)";
+        bodyTemp[(int) bodyPart.LeftHandMiddle]    = "Middle Finger (Left)";
+        bodyTemp[(int) bodyPart.LeftHandRing]      = "Ring Finger (Left)";
+        bodyTemp[(int) bodyPart.LeftHandPinky]     = "Pinky Finger (Left)";
+        bodyTemp[(int) bodyPart.LeftHand]          = "Left Hand";
+        bodyTemp[(int) bodyPart.LeftForearms]      = "Forearms (Left)";
+        bodyTemp[(int) bodyPart.LeftBiceps]        = "Biceps (Left)";
+        bodyTemp[(int) bodyPart.LeftTriceps]       = "Triceps (Left)";
+        bodyTemp[(int) bodyPart.RightHandThumb]    = "Thumb (Right)";
+        bodyTemp[(int) bodyPart.RightHandIndex]    = "Index Finger (Right)";
+        bodyTemp[(int) bodyPart.RightHandMiddle]   = "Middle Finger (Right)";
+        bodyTemp[(int) bodyPart.RightHandRing]     = "Ring Finger (Right)";
+        bodyTemp[(int) bodyPart.RightHandPinky]    = "Pinky Finger (Right)";
+        bodyTemp[(int) bodyPart.RightHand]         = "Right Hand";
+        bodyTemp[(int) bodyPart.RightForearms]     = "Forearms (Right)";
+        bodyTemp[(int) bodyPart.RightBiceps]       = "Biceps (Right)";
+        bodyTemp[(int) bodyPart.RightTriceps]      = "Triceps (Right)";
 
-        //TODO: Make sure translations are correct
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.UpperHead]         = "Kichwa cha juu";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LowerHead]         = "Shingo";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.UpperBack]         = "Nyuma ya nyuma";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LowerBack]         = "Kurudi nyuma";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.Feet]              = "Viganja";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.UpperRightLeg]     = "Mguu";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LowerRightLeg]     = "Mguu";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.Knees]             = "Magoti";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.UpperLeftLeg]      = "Mguu";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LowerLeftLeg]      = "Mguu";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.Chest]             = "Kifua";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.Belly]             = "Tumbo";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftHandThumb]     = "Kidole gumba";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftHandIndex]     = "Kidole cha kwanza";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftHandMiddle]    = "Kidole cha kati";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftHandRing]      = "Pete kidole";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftHandPinky]     = "Kidole kidogo";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftHand]          = "";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftForearms]      = "Mikono";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftBiceps]        = "Mikono";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.LeftTriceps]       = "";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightHandThumb]    = "Kidole gumba";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightHandIndex]    = "Kidole cha kwanza";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightHandMiddle]   = "Kidole cha kati";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightHandRing]     = "Pete Kidole";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightHandPinky]    = "Kidole kidogo";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightHand]         = "";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightForearms]     = "Mikono";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightBiceps]       = "Mikono";
-        bodyTranslations[(int) language.Swahili,      (int) bodyPart.RightTriceps]      = "";
+        bodyTranslations[(int)language.English] = bodyTemp;
         
         //English Symptom Translations
-        symptomTrans[(int) language.English,      (int) symptom.Pain]            = "Pain";
-        symptomTrans[(int) language.English,      (int) symptom.Swelling]        = "Swelling";
-        symptomTrans[(int) language.English,      (int) symptom.Weakness]        = "Weakness";
-        symptomTrans[(int) language.English,      (int) symptom.Redness]         = "Redness";
-        symptomTrans[(int) language.English,      (int) symptom.Itching]         = "Itching";
-        symptomTrans[(int) language.English,      (int) symptom.Other]           = "Other";
-        symptomTrans[(int) language.English,      (int) symptom.Diarrhea]        = "Diarrhea";
-        symptomTrans[(int) language.English,      (int) symptom.Constipation]    = "Constipation";
-        symptomTrans[(int) language.English,      (int) symptom.LossOfAppetite]  = "Loss of Appetite";
-        symptomTrans[(int) language.English,      (int) symptom.WeightLoss]      = "Weight Loss";
-        symptomTrans[(int) language.English,      (int) symptom.Vomiting]        = "Vomiting";
-        symptomTrans[(int) language.English,      (int) symptom.BleedingGums]    = "Bleeding Gums";
-        symptomTrans[(int) language.English,      (int) symptom.DryMouth]        = "Dry Mouth";
-        symptomTrans[(int) language.English,      (int) symptom.StiffNeck]       = "Stiff Neck";
-        symptomTrans[(int) language.English,      (int) symptom.Thirsty]         = "Thirsty";
-        symptomTrans[(int) language.English,      (int) symptom.Headache]        = "Headache";
-        symptomTrans[(int) language.English,      (int) symptom.Dizziness]       = "Dizziness";
-        symptomTrans[(int) language.English,      (int) symptom.EyePain]         = "Eye Pain";
-        symptomTrans[(int) language.English,      (int) symptom.Fever]           = "Fever";
-        symptomTrans[(int) language.English,      (int) symptom.YellowingOfEyes] = "Yellowing of Eyes";
-        symptomTrans[(int) language.English,      (int) symptom.Cough]           = "Cough";
-        symptomTrans[(int) language.English,      (int) symptom.ShortOfBreath]   = "Short of Breath";
-        symptomTrans[(int) language.English,      (int) symptom.Chills]          = "Chills";
-        symptomTrans[(int) language.English,      (int) symptom.Sweating]        = "Sweating";
+        symTemp[(int) symptom.Pain]            = "Pain";
+        symTemp[(int) symptom.Swelling]        = "Swelling";
+        symTemp[(int) symptom.Weakness]        = "Weakness";
+        symTemp[(int) symptom.Redness]         = "Redness";
+        symTemp[(int) symptom.Itching]         = "Itching";
+        symTemp[(int) symptom.Other]           = "Other";
+        symTemp[(int) symptom.Diarrhea]        = "Diarrhea";
+        symTemp[(int) symptom.Constipation]    = "Constipation";
+        symTemp[(int) symptom.LossOfAppetite]  = "Loss of Appetite";
+        symTemp[(int) symptom.WeightLoss]      = "Weight Loss";
+        symTemp[(int) symptom.Vomiting]        = "Vomiting";
+        symTemp[(int) symptom.BleedingGums]    = "Bleeding Gums";
+        symTemp[(int) symptom.DryMouth]        = "Dry Mouth";
+        symTemp[(int) symptom.StiffNeck]       = "Stiff Neck";
+        symTemp[(int) symptom.Thirsty]         = "Thirsty";
+        symTemp[(int) symptom.Headache]        = "Headache";
+        symTemp[(int) symptom.Dizziness]       = "Dizziness";
+        symTemp[(int) symptom.EyePain]         = "Eye Pain";
+        symTemp[(int) symptom.Fever]           = "Fever";
+        symTemp[(int) symptom.YellowingOfEyes] = "Yellowing of Eyes";
+        symTemp[(int) symptom.Cough]           = "Cough";
+        symTemp[(int) symptom.ShortOfBreath]   = "Short of Breath";
+        symTemp[(int) symptom.Chills]          = "Chills";
+        symTemp[(int) symptom.Sweating]        = "Sweating";
+
+        symptomTrans[(int)language.English] = symTemp;
+        
+        //Swahili Body Part Translations
+        //TODO: Make sure translations are correct
+        bodyTemp[(int) bodyPart.UpperHead]         = "Kichwa cha juu";
+        bodyTemp[(int) bodyPart.LowerHead]         = "Shingo";
+        bodyTemp[(int) bodyPart.UpperBack]         = "Nyuma ya nyuma";
+        bodyTemp[(int) bodyPart.LowerBack]         = "Kurudi nyuma";
+        bodyTemp[(int) bodyPart.Feet]              = "Viganja";
+        bodyTemp[(int) bodyPart.UpperRightLeg]     = "Mguu";
+        bodyTemp[(int) bodyPart.LowerRightLeg]     = "Mguu";
+        bodyTemp[(int) bodyPart.Knees]             = "Magoti";
+        bodyTemp[(int) bodyPart.UpperLeftLeg]      = "Mguu";
+        bodyTemp[(int) bodyPart.LowerLeftLeg]      = "Mguu";
+        bodyTemp[(int) bodyPart.Chest]             = "Kifua";
+        bodyTemp[(int) bodyPart.Belly]             = "Tumbo";
+        bodyTemp[(int) bodyPart.LeftHandThumb]     = "Kidole gumba";
+        bodyTemp[(int) bodyPart.LeftHandIndex]     = "Kidole cha kwanza";
+        bodyTemp[(int) bodyPart.LeftHandMiddle]    = "Kidole cha kati";
+        bodyTemp[(int) bodyPart.LeftHandRing]      = "Pete kidole";
+        bodyTemp[(int) bodyPart.LeftHandPinky]     = "Kidole kidogo";
+        bodyTemp[(int) bodyPart.LeftHand]          = "";
+        bodyTemp[(int) bodyPart.LeftForearms]      = "Mikono";
+        bodyTemp[(int) bodyPart.LeftBiceps]        = "Mikono";
+        bodyTemp[(int) bodyPart.LeftTriceps]       = "";
+        bodyTemp[(int) bodyPart.RightHandThumb]    = "Kidole gumba";
+        bodyTemp[(int) bodyPart.RightHandIndex]    = "Kidole cha kwanza";
+        bodyTemp[(int) bodyPart.RightHandMiddle]   = "Kidole cha kati";
+        bodyTemp[(int) bodyPart.RightHandRing]     = "Pete Kidole";
+        bodyTemp[(int) bodyPart.RightHandPinky]    = "Kidole kidogo";
+        bodyTemp[(int) bodyPart.RightHand]         = "";
+        bodyTemp[(int) bodyPart.RightForearms]     = "Mikono";
+        bodyTemp[(int) bodyPart.RightBiceps]       = "Mikono";
+        bodyTemp[(int) bodyPart.RightTriceps]      = "";
+
+        bodyTranslations[(int)language.Swahili] = bodyTemp;
 
         //Swahili Symptom Translations
         //TODO: Make sure translations are correct
-        symptomTrans[(int) language.Swahili,      (int) symptom.Pain]            = "Maumivu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Swelling]        = "Kuvimba";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Weakness]        = "Ukosefu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Redness]         = "Ukombozi";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Itching]         = "Kuvuta";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Other]           = "Nyingine";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Diarrhea]        = "Kuhara";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Constipation]    = "Kudumu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.LossOfAppetite]  = "Kupoteza hamu ya kula";
-        symptomTrans[(int) language.Swahili,      (int) symptom.WeightLoss]      = "Kupungua uzito";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Vomiting]        = "Kupiga kura";
-        symptomTrans[(int) language.Swahili,      (int) symptom.BleedingGums]    = "Utumbo wa kuvuta";
-        symptomTrans[(int) language.Swahili,      (int) symptom.DryMouth]        = "Mkavu Kavu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.StiffNeck]       = "Shingo Ngumu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Thirsty]         = "Kiu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Headache]        = "Kichwa cha kichwa";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Dizziness]       = "Kizunguzungu";
-        symptomTrans[(int) language.Swahili,      (int) symptom.EyePain]         = "Maumivu ya Jicho";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Fever]           = "Homa";
-        symptomTrans[(int) language.Swahili,      (int) symptom.YellowingOfEyes] = "Kupalika kwa Macho";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Cough]           = "Kukata";
-        symptomTrans[(int) language.Swahili,      (int) symptom.ShortOfBreath]   = "Pumzi fupi";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Chills]          = "Kukua";
-        symptomTrans[(int) language.Swahili,      (int) symptom.Sweating]        = "Kutapika";
+        symTemp[(int) symptom.Pain]            = "Maumivu";
+        symTemp[(int) symptom.Swelling]        = "Kuvimba";
+        symTemp[(int) symptom.Weakness]        = "Ukosefu";
+        symTemp[(int) symptom.Redness]         = "Ukombozi";
+        symTemp[(int) symptom.Itching]         = "Kuvuta";
+        symTemp[(int) symptom.Other]           = "Nyingine";
+        symTemp[(int) symptom.Diarrhea]        = "Kuhara";
+        symTemp[(int) symptom.Constipation]    = "Kudumu";
+        symTemp[(int) symptom.LossOfAppetite]  = "Kupoteza hamu ya kula";
+        symTemp[(int) symptom.WeightLoss]      = "Kupungua uzito";
+        symTemp[(int) symptom.Vomiting]        = "Kupiga kura";
+        symTemp[(int) symptom.BleedingGums]    = "Utumbo wa kuvuta";
+        symTemp[(int) symptom.DryMouth]        = "Mkavu Kavu";
+        symTemp[(int) symptom.StiffNeck]       = "Shingo Ngumu";
+        symTemp[(int) symptom.Thirsty]         = "Kiu";
+        symTemp[(int) symptom.Headache]        = "Kichwa cha kichwa";
+        symTemp[(int) symptom.Dizziness]       = "Kizunguzungu";
+        symTemp[(int) symptom.EyePain]         = "Maumivu ya Jicho";
+        symTemp[(int) symptom.Fever]           = "Homa";
+        symTemp[(int) symptom.YellowingOfEyes] = "Kupalika kwa Macho";
+        symTemp[(int) symptom.Cough]           = "Kukata";
+        symTemp[(int) symptom.ShortOfBreath]   = "Pumzi fupi";
+        symTemp[(int) symptom.Chills]          = "Kukua";
+        symTemp[(int) symptom.Sweating]        = "Kutapika";
+
+        symptomTrans[(int)language.Swahili] = symTemp;
+        
+        //Afrikans Body Part Translations
+        //TODO: Make sure translations are correct
+        bodyTemp[(int) bodyPart.UpperHead]         = "Boonkop";
+        bodyTemp[(int) bodyPart.LowerHead]         = "Onderkop";
+        bodyTemp[(int) bodyPart.UpperBack]         = "Boonste rug";
+        bodyTemp[(int) bodyPart.LowerBack]         = "Laerug";
+        bodyTemp[(int) bodyPart.Feet]              = "Voete";
+        bodyTemp[(int) bodyPart.UpperRightLeg]     = "Boonste regterbeen";
+        bodyTemp[(int) bodyPart.LowerRightLeg]     = "onderste regterbeen";
+        bodyTemp[(int) bodyPart.Knees]             = "knieë";
+        bodyTemp[(int) bodyPart.UpperLeftLeg]      = "";
+        bodyTemp[(int) bodyPart.LowerLeftLeg]      = "";
+        bodyTemp[(int) bodyPart.Chest]             = "";
+        bodyTemp[(int) bodyPart.Belly]             = "";
+        bodyTemp[(int) bodyPart.LeftHandThumb]     = "";
+        bodyTemp[(int) bodyPart.LeftHandIndex]     = "";
+        bodyTemp[(int) bodyPart.LeftHandMiddle]    = "";
+        bodyTemp[(int) bodyPart.LeftHandRing]      = "";
+        bodyTemp[(int) bodyPart.LeftHandPinky]     = "";
+        bodyTemp[(int) bodyPart.LeftHand]          = "";
+        bodyTemp[(int) bodyPart.LeftForearms]      = "";
+        bodyTemp[(int) bodyPart.LeftBiceps]        = "";
+        bodyTemp[(int) bodyPart.LeftTriceps]       = "";
+        bodyTemp[(int) bodyPart.RightHandThumb]    = "";
+        bodyTemp[(int) bodyPart.RightHandIndex]    = "";
+        bodyTemp[(int) bodyPart.RightHandMiddle]   = "";
+        bodyTemp[(int) bodyPart.RightHandRing]     = "";
+        bodyTemp[(int) bodyPart.RightHandPinky]    = "";
+        bodyTemp[(int) bodyPart.RightHand]         = "";
+        bodyTemp[(int) bodyPart.RightForearms]     = "";
+        bodyTemp[(int) bodyPart.RightBiceps]       = "";
+        bodyTemp[(int) bodyPart.RightTriceps]      = "";
+
+        bodyTranslations[(int)language.Afrikans] = bodyTemp;
+
+        //Afrikans Symptom Translations
+        //TODO: Make sure translations are correct
+        symTemp[(int) symptom.Pain]            = "";
+        symTemp[(int) symptom.Swelling]        = "";
+        symTemp[(int) symptom.Weakness]        = "";
+        symTemp[(int) symptom.Redness]         = "";
+        symTemp[(int) symptom.Itching]         = "";
+        symTemp[(int) symptom.Other]           = "";
+        symTemp[(int) symptom.Diarrhea]        = "";
+        symTemp[(int) symptom.Constipation]    = "";
+        symTemp[(int) symptom.LossOfAppetite]  = "";
+        symTemp[(int) symptom.WeightLoss]      = "";
+        symTemp[(int) symptom.Vomiting]        = "";
+        symTemp[(int) symptom.BleedingGums]    = "";
+        symTemp[(int) symptom.DryMouth]        = "";
+        symTemp[(int) symptom.StiffNeck]       = "";
+        symTemp[(int) symptom.Thirsty]         = "";
+        symTemp[(int) symptom.Headache]        = "";
+        symTemp[(int) symptom.Dizziness]       = "";
+        symTemp[(int) symptom.EyePain]         = "";
+        symTemp[(int) symptom.Fever]           = "";
+        symTemp[(int) symptom.YellowingOfEyes] = "";
+        symTemp[(int) symptom.Cough]           = "";
+        symTemp[(int) symptom.ShortOfBreath]   = "";
+        symTemp[(int) symptom.Chills]          = "";
+        symTemp[(int) symptom.Sweating]        = "";
+
+        symptomTrans[(int)language.Afrikans] = symTemp;
+        
+        //French Body Part Translations
+        //TODO: Make sure translations are correct
+        bodyTemp[(int) bodyPart.UpperHead]         = "";
+        bodyTemp[(int) bodyPart.LowerHead]         = "";
+        bodyTemp[(int) bodyPart.UpperBack]         = "";
+        bodyTemp[(int) bodyPart.LowerBack]         = "";
+        bodyTemp[(int) bodyPart.Feet]              = "";
+        bodyTemp[(int) bodyPart.UpperRightLeg]     = "";
+        bodyTemp[(int) bodyPart.LowerRightLeg]     = "";
+        bodyTemp[(int) bodyPart.Knees]             = "";
+        bodyTemp[(int) bodyPart.UpperLeftLeg]      = "";
+        bodyTemp[(int) bodyPart.LowerLeftLeg]      = "";
+        bodyTemp[(int) bodyPart.Chest]             = "";
+        bodyTemp[(int) bodyPart.Belly]             = "";
+        bodyTemp[(int) bodyPart.LeftHandThumb]     = "";
+        bodyTemp[(int) bodyPart.LeftHandIndex]     = "";
+        bodyTemp[(int) bodyPart.LeftHandMiddle]    = "";
+        bodyTemp[(int) bodyPart.LeftHandRing]      = "";
+        bodyTemp[(int) bodyPart.LeftHandPinky]     = "";
+        bodyTemp[(int) bodyPart.LeftHand]          = "";
+        bodyTemp[(int) bodyPart.LeftForearms]      = "";
+        bodyTemp[(int) bodyPart.LeftBiceps]        = "";
+        bodyTemp[(int) bodyPart.LeftTriceps]       = "";
+        bodyTemp[(int) bodyPart.RightHandThumb]    = "";
+        bodyTemp[(int) bodyPart.RightHandIndex]    = "";
+        bodyTemp[(int) bodyPart.RightHandMiddle]   = "";
+        bodyTemp[(int) bodyPart.RightHandRing]     = "";
+        bodyTemp[(int) bodyPart.RightHandPinky]    = "";
+        bodyTemp[(int) bodyPart.RightHand]         = "";
+        bodyTemp[(int) bodyPart.RightForearms]     = "";
+        bodyTemp[(int) bodyPart.RightBiceps]       = "";
+        bodyTemp[(int) bodyPart.RightTriceps]      = "";
+
+        bodyTranslations[(int)language.French] = bodyTemp;
+
+        //French Symptom Translations
+        //TODO: Make sure translations are correct
+        symTemp[(int) symptom.Pain]            = "";
+        symTemp[(int) symptom.Swelling]        = "";
+        symTemp[(int) symptom.Weakness]        = "";
+        symTemp[(int) symptom.Redness]         = "";
+        symTemp[(int) symptom.Itching]         = "";
+        symTemp[(int) symptom.Other]           = "";
+        symTemp[(int) symptom.Diarrhea]        = "";
+        symTemp[(int) symptom.Constipation]    = "";
+        symTemp[(int) symptom.LossOfAppetite]  = "";
+        symTemp[(int) symptom.WeightLoss]      = "";
+        symTemp[(int) symptom.Vomiting]        = "";
+        symTemp[(int) symptom.BleedingGums]    = "";
+        symTemp[(int) symptom.DryMouth]        = "";
+        symTemp[(int) symptom.StiffNeck]       = "";
+        symTemp[(int) symptom.Thirsty]         = "";
+        symTemp[(int) symptom.Headache]        = "";
+        symTemp[(int) symptom.Dizziness]       = "";
+        symTemp[(int) symptom.EyePain]         = "";
+        symTemp[(int) symptom.Fever]           = "";
+        symTemp[(int) symptom.YellowingOfEyes] = "";
+        symTemp[(int) symptom.Cough]           = "";
+        symTemp[(int) symptom.ShortOfBreath]   = "";
+        symTemp[(int) symptom.Chills]          = "";
+        symTemp[(int) symptom.Sweating]        = "";
+
+        symptomTrans[(int)language.French] = symTemp;
 
     }
 	
@@ -333,7 +474,7 @@ public class translationManager : MonoBehaviour {
                 return bodyPart.RightBiceps;
                 break;
             default:
-                Debug.Log("Error Name does not match any cases: " + tempName);
+                Debug.Log("Error Name does not match any cases: " + bodyTempName);
                 return bodyPart.UpperHead;
                 break;
         }
