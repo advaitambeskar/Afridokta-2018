@@ -16,9 +16,9 @@ public class lightManager : MonoBehaviour {
 
     public Light[] lightUpperHead, lightLowerHead, lightKnees, lightFeet;
 
-    private Color hoverColor = Color.cyan;
-    private Color selectColor = Color.yellow;
-    private Color hoverSelColor = Color.green;
+	private Color hoverColor = new Color(0F, 0.5255F, 0.5451F, 1F);
+	private Color selectColor = Color.red;
+	private Color hoverSelColor = new Color(0F, 0.8078F, 0.8196F, 1F);
     private Color activeColor = Color.grey;
     private Color hoverActColor = Color.blue;
     private Color hoverSelActColor = new Color(0.2F, 0.3F, 0.4F, 1F);
