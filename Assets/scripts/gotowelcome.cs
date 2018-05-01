@@ -15,7 +15,7 @@ public class gotowelcome : MonoBehaviour {
 	}
     public void gotowelcome2()
     {
-        SceneManager.LoadScene("Welcome");
+        SceneManager.LoadScene("Splash");
 
     }
 }

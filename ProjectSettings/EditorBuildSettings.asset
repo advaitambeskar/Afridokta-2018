@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Splash.unity
     guid: 311613df2bf5a2e40ab512c871ee694f
   - enabled: 1
-    path: Assets/Welcome.unity
-    guid: 96827469e18e52f4993514d7cf81277f
-  - enabled: 1
     path: Assets/Scenes/InstructionSplashScreenWithoutLanguage.unity
     guid: 607b6b556b169ec4f8747235265f0035
+  - enabled: 1
+    path: Assets/MaleSelect.unity
+    guid: d18d106a6aa10e74fa8aa7037a5f34b1
+  - enabled: 1
+    path: Assets/FemaleSelect.unity
+    guid: 9baeaa0a31647734e9a1dc65b82dc1ef
