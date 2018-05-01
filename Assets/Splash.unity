@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 117595475}
   m_LocalRotation: {x: -0, y: 0.01718623, z: -0, w: -0.99985236}
-  m_LocalPosition: {x: -0.98, y: 1.23, z: 2.09}
+  m_LocalPosition: {x: -0.979, y: 1.23, z: 2.074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1810790640}
@@ -798,8 +798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acffa3d22636c64d8b4819dd0082ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumTimeToShowLogo: 5
-  levelToLoad: Welcome
+  minimumTimeToShowLogo: 10
+  levelToLoad: InstructionSplashScreenWithoutLanguage
   animation: {fileID: 690559445}
   introName: SplashIn
   outroName: SplashOut
@@ -898,7 +898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.3, y: 1.94}
   m_SizeDelta: {x: 2048, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2099621549
