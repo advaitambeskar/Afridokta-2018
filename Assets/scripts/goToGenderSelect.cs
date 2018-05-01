@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class gotowelcome : MonoBehaviour {
+
+public class goToGenderSelect : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		
 	}
-
+	
 	// Update is called once per frame
 	void Update () {
-
+		
 	}
-    public void gotowelcome2()
+    public void sceneLoad()
     {
-        SceneManager.LoadScene("Splash");
-
+        SceneManager.LoadScene("GenderSelect");
     }
 }

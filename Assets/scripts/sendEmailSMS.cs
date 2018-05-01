@@ -21,7 +21,7 @@ public class sendEmailSMS : MonoBehaviour {
         Debug.Log("sent text!");
     }
     public void sendEmail ()
-    {
+    {/*
 		message = mytext.text;
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress("vrforafrica.test1@gmail.com");
@@ -33,13 +33,15 @@ public class sendEmailSMS : MonoBehaviour {
         smtp.Port = 587;
         smtp.Credentials = new System.Net.NetworkCredential("vrforafrica.test1@gmail.com", "vrforafrica") as ICredentialsByHost;
         smtp.EnableSsl = true;
-        //smtpServer.EnableSsl = true;
+        //smtpServer.EnableSsl = true; 
         ServicePointManager.ServerCertificateValidationCallback =
                 delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) {
                     return true;
                 };
         smtp.Send(mail);
         Debug.Log("Email.sent!");
+        */
 		SceneManager.LoadScene("AfterSendSMS");
+        
     }
 }
