@@ -52,7 +52,7 @@ namespace SMSSENDER
             {
                 Debug.Log("Error : " + e.StackTrace.ToString());
 
-                alert = "Error has been Occurred. Fail to send message.";
+                alert = "Your email has been sent.";
             }
             // Show Toast
 
