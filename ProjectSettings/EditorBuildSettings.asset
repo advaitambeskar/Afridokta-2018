@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/InstructionSplashScreenWithoutLanguage.unity
     guid: 607b6b556b169ec4f8747235265f0035
   - enabled: 1
+    path: Assets/Scenes/GenderSelect.unity
+    guid: b07977cd97deef54ab25f326fe357312
+  - enabled: 1
     path: Assets/MaleSelect.unity
     guid: d18d106a6aa10e74fa8aa7037a5f34b1
   - enabled: 1
