@@ -72,15 +72,19 @@ public enum symptom
 }
 
 public class translationManager : MonoBehaviour {
-    public language currentLanguage;
+    public static language currentLanguage;
 
-
+    private string[] languages = new string[language.GetNames(typeof(language)).Length];
     private string[,] bodyTranslations = new string[language.GetNames(typeof(language)).Length, bodyPart.GetNames(typeof(bodyPart)).Length];
     private string[,] symptomTrans = new string[language.GetNames(typeof(language)).Length, symptom.GetNames(typeof(symptom)).Length];
 
     // Use this for initialization
     void Start ()
     {
+        languages[(int)language.English]    = "English";
+        languages[(int)language.Swahili]    = "Swahili";
+        languages[(int)language.Afrikaans]    = "Afrikaans";
+
         //TODO Reduce amount of duplicate declaration. 
         bodyTranslations[(int) language.English,      (int) bodyPart.UpperHead]         = "Upper Head";
         bodyTranslations[(int) language.English,      (int) bodyPart.LowerHead]         = "Lower Head";
@@ -267,6 +271,17 @@ public class translationManager : MonoBehaviour {
     public void setLanguage(language language)
     {
         currentLanguage = language;
+    }
+
+    public void toggleLanguage()
+    {
+        currentLanguage = (language)(((int)currentLanguage + 1) % language.GetNames(typeof(language)).Length);
+    }
+
+    public string getLanguage()
+    {
+        //TODO: Check for missing translation
+        return languages[(int) currentLanguage];
     }
 
     public string getName(bodyPart part)
